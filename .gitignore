@@ -61,6 +61,9 @@ MScDissertationTemplate2026.docx
 Guidance for Dissertation Content Write.docx
 Project 7.pdf
 
+# Registry entry form -- carries personal data (student ID, email, signature)
+Dissertation Entry Form*.doc
+
 # Run logs: large, and they carry rented-host filesystem paths
 runs/**/*.log
 runs/*.log
