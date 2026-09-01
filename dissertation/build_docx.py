@@ -179,6 +179,8 @@ def prepare_front_matter(doc, meta, abstract_paras):
     # Title page (field-backed placeholders -> literal text)
     set_text(paras[0], meta["title"])
     set_text(paras[2], meta["author"])
+    if meta.get("student_id"):
+        set_text(paras[4], "Student ID: " + meta["student_id"])
     set_text(paras[5], "Master of Science in " + meta["pathway"])
     set_text(paras[17], meta["date"])
     set_text(paras[18], "Supervised by: " + meta["supervisor"])
@@ -186,6 +188,8 @@ def prepare_front_matter(doc, meta, abstract_paras):
     # Declaration page
     set_text(paras[27], meta["title"])
     set_text(paras[31], meta["author"])
+    if meta.get("student_id"):
+        set_text(paras[33], "Student ID: " + meta["student_id"])
     set_text(paras[36], "Author Signature: ______________________"
                         "\t\tDate: " + meta["date_signed"])
     set_text(paras[40], "Supervisor's name: " + meta["supervisor"])
