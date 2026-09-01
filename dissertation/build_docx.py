@@ -493,6 +493,7 @@ def main():
 
     words = body_word_count(doc)
     stamp_word_count(doc, words)
+    force_field_update_on_open(doc)
     doc.save(args.out)
 
     # ---- report ---------------------------------------------------------
@@ -515,9 +516,10 @@ def main():
     if missing_figs:
         print("MISSING FIGURE FILES: %d" % len(missing_figs))
     print("wrote %s" % args.out)
-    print("\nNEXT (manual, in Word): right-click the Table of Contents and "
-          "choose Update Field -> Update entire table. The TOC still shows the "
-          "template's placeholder chapters until you do.")
+    print("\nWord will refresh the Table of Contents and page count when the "
+          "file is opened (w:updateFields is set). If your Word build asks "
+          "\"update fields?\", answer YES. If the TOC still shows template "
+          "chapters, right-click it -> Update Field -> Update entire table.")
     return 1 if (cites.missing or unresolved) else 0
 
 
@@ -576,6 +578,38 @@ def body_word_count(doc):
     return total
 
 
+def add_field(par, instr):
+    """Insert a real Word field (begin / instrText / separate / end) so Word
+    computes the value itself."""
+    from docx.oxml.ns import qn
+    from docx.oxml import OxmlElement
+    r1 = OxmlElement("w:r"); fc = OxmlElement("w:fldChar")
+    fc.set(qn("w:fldCharType"), "begin"); r1.append(fc); par._p.append(r1)
+    r2 = OxmlElement("w:r"); it = OxmlElement("w:instrText")
+    it.set(qn("xml:space"), "preserve"); it.text = instr
+    r2.append(it); par._p.append(r2)
+    r3 = OxmlElement("w:r"); fc2 = OxmlElement("w:fldChar")
+    fc2.set(qn("w:fldCharType"), "separate"); r3.append(fc2); par._p.append(r3)
+    r4 = OxmlElement("w:r"); t = OxmlElement("w:t"); t.text = "1"
+    r4.append(t); par._p.append(r4)
+    r5 = OxmlElement("w:r"); fc3 = OxmlElement("w:fldChar")
+    fc3.set(qn("w:fldCharType"), "end"); r5.append(fc3); par._p.append(r5)
+
+
+def force_field_update_on_open(doc):
+    """Set w:updateFields so Word refreshes the Table of Contents (and the page
+    count) when the document is opened, instead of leaving the template's stale
+    placeholder chapters on display."""
+    from docx.oxml.ns import qn
+    from docx.oxml import OxmlElement
+    settings = doc.settings.element
+    for existing in settings.findall(qn("w:updateFields")):
+        settings.remove(existing)
+    el = OxmlElement("w:updateFields")
+    el.set(qn("w:val"), "true")
+    settings.insert(0, el)
+
+
 def stamp_word_count(doc, words):
     for p in doc.paragraphs:
         t = p.text.strip()
@@ -583,7 +617,8 @@ def stamp_word_count(doc, words):
             set_text(p, "Number of Words:\t%d (body text; excludes front "
                         "matter, references and appendices)" % words)
         elif t.startswith("Number of Pages"):
-            set_text(p, "Number of Pages:\tsee footer (update fields in Word)")
+            set_text(p, "Number of Pages:\t")
+            add_field(p, " NUMPAGES  \\* MERGEFORMAT ")
 
 
 if __name__ == "__main__":

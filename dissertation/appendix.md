@@ -4,7 +4,7 @@
 
 The complete source code for the system described in this dissertation — the `cxr_uncertainty` package, the experiment and analysis scripts, the test suite, the four agents, the deployment application and the sources of this document — is published at:
 
-`https://github.com/<USERNAME>/cxr-uncertainty`
+`https://github.com/dush91/cxr-uncertainty`
 
 Per the guidance, program listings are not reproduced here. The repository excludes all patient data, model checkpoints and derived arrays; `PUBLISHING.md` in the repository records what was excluded and why. In particular, no image from any corpus, no radiology report text and no patient identifier is published, in accordance with the data-use agreements described in Section 9.5.
 
