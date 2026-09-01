@@ -1,0 +1,138 @@
+{
+  "title": "kermany (OOD under shift, Pneumonia only)",
+  "n_images": 5856,
+  "pneumonia_prevalence": 0.7296789617486339,
+  "report": {
+    "schema_version": 2,
+    "n_images": 5856,
+    "n_records": 5856,
+    "n_confident": 586,
+    "n_confident_wrong": 262,
+    "confident_error_auroc_std": 0.3986546979549524,
+    "confident_error_auroc_mi": 0.2953185373668834,
+    "confident_error_auroc_mahalanobis": 0.7726062576571482,
+    "confident_error_recall": 0.7213740458015268,
+    "false_flag_rate": 0.32098765432098764,
+    "aurc": 0.5647192162279997,
+    "coverage_at_lowest_risk": [
+      0.9010238907849829,
+      0.4393939393939394
+    ],
+    "ece": 0.71761900611471,
+    "per_pathology": {
+      "Pneumonia": {
+        "n": 5856,
+        "positives": 4273,
+        "task_auroc": 0.7316862303207243,
+        "confident_correct": 324,
+        "confident_wrong": 262,
+        "flagged": 293
+      }
+    },
+    "error_type_counts": {
+      "confident_correct": 324,
+      "tentative_correct": 3735,
+      "confident_fp": 0,
+      "tentative_fp": 664,
+      "confident_fn": 262,
+      "tentative_fn": 871,
+      "unknown": 0
+    },
+    "risk_config": {
+      "decision_thresh": 0.5,
+      "conf_thresh": 0.6,
+      "unc_thresh": 0.15,
+      "mc_samples": 10,
+      "use_mc_dropout": true
+    },
+    "conformal_active": false,
+    "conformal_coverage": null,
+    "conformal_size": null,
+    "per_pathology_conformal": null,
+    "brier": null
+  },
+  "selectivity": [
+    {
+      "conf_top_pct": 50,
+      "n_confident": 2928,
+      "n_confident_wrong": 1145,
+      "auroc_epistemic_std": 0.2425,
+      "auroc_mutual_info": 0.1967,
+      "auroc_mahalanobis": 0.6494
+    },
+    {
+      "conf_top_pct": 25,
+      "n_confident": 1464,
+      "n_confident_wrong": 770,
+      "auroc_epistemic_std": 0.4412,
+      "auroc_mutual_info": 0.3232,
+      "auroc_mahalanobis": 0.7698
+    },
+    {
+      "conf_top_pct": 15,
+      "n_confident": 879,
+      "n_confident_wrong": 428,
+      "auroc_epistemic_std": 0.4328,
+      "auroc_mutual_info": 0.3215,
+      "auroc_mahalanobis": 0.778
+    },
+    {
+      "conf_top_pct": 10,
+      "n_confident": 586,
+      "n_confident_wrong": 262,
+      "auroc_epistemic_std": 0.3987,
+      "auroc_mutual_info": 0.2953,
+      "auroc_mahalanobis": 0.7726
+    },
+    {
+      "conf_top_pct": 5,
+      "n_confident": 293,
+      "n_confident_wrong": 133,
+      "auroc_epistemic_std": 0.4104,
+      "auroc_mutual_info": 0.2932,
+      "auroc_mahalanobis": 0.7895
+    }
+  ],
+  "meta": {
+    "calibrator": "ts",
+    "use_beta": false,
+    "use_ts": true,
+    "alignment_set": "none",
+    "n_members": 5,
+    "n_pathologies": 14,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino",
+      "biomedclip",
+      "arkswin"
+    ],
+    "beta_slots_fit": 0,
+    "beta_slots_identity": 70,
+    "temperature_T": 0.6609,
+    "uq_score": "mahalanobis",
+    "maha_fit": {
+      "label_idx": 6,
+      "label": "Pneumonia",
+      "n_per_class": {
+        "0": 1964,
+        "1": 38
+      },
+      "n_classes": 2
+    },
+    "thresholds": {
+      "Pneumonia": 0.0064
+    },
+    "conf_cut": 0.4587,
+    "unc_cut": 2704.8441,
+    "conf_pct": 10.0,
+    "unc_pct": 50.0,
+    "unc_column": "mahalanobis",
+    "risk_flag_override": false,
+    "conformal_active": false,
+    "maha_reproducibility": {
+      "max_abs_diff_vs_saved": 0.0,
+      "mean_abs_diff_vs_saved": 0.0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "agent3_gate_summary_v1",
+  "note": "Aggregate only. The per-case records are keyed by dataset image identifiers and carry per-image measured quantities; they are withheld under the ReXGradient data-use agreement (see PUBLISHING.md). No identifier appears in this file.",
+  "batches": [
+    {
+      "label": "deterministic template gate",
+      "n_cases": 50,
+      "n_gate_failures": 0,
+      "backend_requested": "template",
+      "cases_by_kind": {
+        "confident_error": 17,
+        "normal": 17,
+        "ood": 16
+      },
+      "renderings_by_backend": {
+        "template": 50
+      },
+      "audit_failure_kinds": {},
+      "llm_outcomes": {
+        "none": 50
+      },
+      "source_sha256_prefix": "6f187d34e9276fb6"
+    },
+    {
+      "label": "live LLM lane",
+      "n_cases": 3,
+      "n_gate_failures": 1,
+      "backend_requested": "auto",
+      "cases_by_kind": {
+        "confident_error": 1,
+        "normal": 1,
+        "ood": 1
+      },
+      "renderings_by_backend": {
+        "template": 2,
+        "ollama_local->template": 1
+      },
+      "audit_failure_kinds": {},
+      "llm_outcomes": {
+        "LLM backends unavailable (TimeoutError: timed out)": 2,
+        "LLM rendering failed the faithfulness audit (1 failures)": 1
+      },
+      "source_sha256_prefix": "4eac34fcd6c4830c"
+    }
+  ]
+}

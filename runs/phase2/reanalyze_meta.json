@@ -1,0 +1,62 @@
+{
+  "calibration": {
+    "thresholds": {
+      "Atelectasis": 0.1159,
+      "Cardiomegaly": 0.1013,
+      "Edema": 0.0693,
+      "Effusion": 0.1322,
+      "Emphysema": 0.0135,
+      "Fibrosis": 0.0535,
+      "Hernia": 0.0123,
+      "Infiltration": 0.1809,
+      "Mass": 0.0417,
+      "Nodule": 0.1275,
+      "Pleural_Thickening": 0.0506,
+      "Pneumonia": 0.0432,
+      "Pneumothorax": 0.1063
+    },
+    "conf_cut": 0.7319,
+    "unc_cut": 0.0102,
+    "conf_pct": 10.0,
+    "unc_pct": 50.0,
+    "cal_split": "role_C",
+    "eval_split": "role_D"
+  },
+  "confident_error_auroc_vs_selectivity": [
+    {
+      "conf_top_pct": 50,
+      "n_confident": 13078,
+      "n_confident_wrong": 387,
+      "auroc_epistemic_std": 0.8891,
+      "auroc_mutual_info": 0.8337
+    },
+    {
+      "conf_top_pct": 25,
+      "n_confident": 6539,
+      "n_confident_wrong": 33,
+      "auroc_epistemic_std": 0.6953,
+      "auroc_mutual_info": 0.6405
+    },
+    {
+      "conf_top_pct": 15,
+      "n_confident": 3924,
+      "n_confident_wrong": 16,
+      "auroc_epistemic_std": 0.6981,
+      "auroc_mutual_info": 0.6228
+    },
+    {
+      "conf_top_pct": 10,
+      "n_confident": 2616,
+      "n_confident_wrong": 8,
+      "auroc_epistemic_std": 0.6385,
+      "auroc_mutual_info": 0.6241
+    },
+    {
+      "conf_top_pct": 5,
+      "n_confident": 1308,
+      "n_confident_wrong": 2,
+      "auroc_epistemic_std": 0.4227,
+      "auroc_mutual_info": 0.4181
+    }
+  ]
+}

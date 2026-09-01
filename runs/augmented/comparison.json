@@ -1,0 +1,324 @@
+{
+  "Atelectasis": {
+    "selected": "openiC",
+    "openiD_n_pos": 186,
+    "openiD_n_neg": 1826,
+    "openiC": {
+      "youden": 0.03822418091878548,
+      "fp": 0.47261774370208104,
+      "tpr": 0.8010752688172043
+    },
+    "weighted": {
+      "youden": 0.03822418091878548,
+      "fp": 0.47261774370208104,
+      "tpr": 0.8010752688172043
+    },
+    "pooled": {
+      "youden": 0.05536167089266935,
+      "fp": 0.35268346111719606,
+      "tpr": 0.6881720430107527
+    },
+    "selected_youden": 0.03822418091878548,
+    "selected_fp": 0.47261774370208104,
+    "selected_tpr": 0.8010752688172043
+  },
+  "Cardiomegaly": {
+    "selected": "openiC",
+    "openiD_n_pos": 147,
+    "openiD_n_neg": 1865,
+    "openiC": {
+      "youden": 0.03036039330302501,
+      "fp": 0.19624664879356568,
+      "tpr": 0.7414965986394558
+    },
+    "weighted": {
+      "youden": 0.02577248455762608,
+      "fp": 0.23378016085790884,
+      "tpr": 0.7755102040816326
+    },
+    "pooled": {
+      "youden": 0.029305902955158922,
+      "fp": 0.20482573726541556,
+      "tpr": 0.7482993197278912
+    },
+    "selected_youden": 0.03036039330302501,
+    "selected_fp": 0.19624664879356568,
+    "selected_tpr": 0.7414965986394558
+  },
+  "Effusion": {
+    "selected": "openiC",
+    "openiD_n_pos": 95,
+    "openiD_n_neg": 1917,
+    "openiC": {
+      "youden": 0.04804671979081544,
+      "fp": 0.2936880542514345,
+      "tpr": 0.8315789473684211
+    },
+    "weighted": {
+      "youden": 0.09325472982223382,
+      "fp": 0.10954616588419405,
+      "tpr": 0.6526315789473685
+    },
+    "pooled": {
+      "youden": 0.1280455621540578,
+      "fp": 0.054773082942097026,
+      "tpr": 0.5684210526315789
+    },
+    "selected_youden": 0.04804671979081544,
+    "selected_fp": 0.2936880542514345,
+    "selected_tpr": 0.8315789473684211
+  },
+  "Infiltration": {
+    "selected": "openiC",
+    "openiD_n_pos": 62,
+    "openiD_n_neg": 1950,
+    "openiC": {
+      "youden": 0.08337984679281275,
+      "fp": 0.5507692307692308,
+      "tpr": 0.8387096774193549
+    },
+    "weighted": {
+      "youden": 0.08337984679281275,
+      "fp": 0.5507692307692308,
+      "tpr": 0.8387096774193549
+    },
+    "pooled": {
+      "youden": 0.177687807827452,
+      "fp": 0.07025641025641026,
+      "tpr": 0.27419354838709675
+    },
+    "selected_youden": 0.08337984679281275,
+    "selected_fp": 0.5507692307692308,
+    "selected_tpr": 0.8387096774193549
+  },
+  "Mass": {
+    "selected": "pooled",
+    "openiD_n_pos": 5,
+    "openiD_n_neg": 2007,
+    "openiC": {
+      "youden": 0.006872485097680845,
+      "fp": 0.6143497757847534,
+      "tpr": 1.0
+    },
+    "weighted": {
+      "youden": 0.006872485097680845,
+      "fp": 0.6143497757847534,
+      "tpr": 1.0
+    },
+    "pooled": {
+      "youden": 0.01252246275044925,
+      "fp": 0.4648729446935725,
+      "tpr": 1.0
+    },
+    "selected_youden": 0.01252246275044925,
+    "selected_fp": 0.4648729446935725,
+    "selected_tpr": 1.0
+  },
+  "Nodule": {
+    "selected": "openiC",
+    "openiD_n_pos": 31,
+    "openiD_n_neg": 1981,
+    "openiC": {
+      "youden": 0.045117087883840244,
+      "fp": 0.20343260979303382,
+      "tpr": 0.3548387096774194
+    },
+    "weighted": {
+      "youden": 0.045117087883840244,
+      "fp": 0.20343260979303382,
+      "tpr": 0.3548387096774194
+    },
+    "pooled": {
+      "youden": 0.045117087883840244,
+      "fp": 0.20343260979303382,
+      "tpr": 0.3548387096774194
+    },
+    "selected_youden": 0.045117087883840244,
+    "selected_fp": 0.20343260979303382,
+    "selected_tpr": 0.3548387096774194
+  },
+  "Pneumonia": {
+    "selected": "openiC",
+    "openiD_n_pos": 40,
+    "openiD_n_neg": 1972,
+    "openiC": {
+      "youden": 0.0072861321893428746,
+      "fp": 0.4213995943204868,
+      "tpr": 0.7
+    },
+    "weighted": {
+      "youden": 0.0072861321893428746,
+      "fp": 0.4213995943204868,
+      "tpr": 0.7
+    },
+    "pooled": {
+      "youden": 0.0072861321893428746,
+      "fp": 0.4213995943204868,
+      "tpr": 0.7
+    },
+    "selected_youden": 0.0072861321893428746,
+    "selected_fp": 0.4213995943204868,
+    "selected_tpr": 0.7
+  },
+  "Pneumothorax": {
+    "selected": "openiC",
+    "openiD_n_pos": 16,
+    "openiD_n_neg": 1996,
+    "openiC": {
+      "youden": 0.03293308158547034,
+      "fp": 0.08567134268537074,
+      "tpr": 0.4375
+    },
+    "weighted": {
+      "youden": 0.03293308158547034,
+      "fp": 0.08567134268537074,
+      "tpr": 0.4375
+    },
+    "pooled": {
+      "youden": 0.029266124070308774,
+      "fp": 0.10771543086172344,
+      "tpr": 0.4375
+    },
+    "selected_youden": 0.03293308158547034,
+    "selected_fp": 0.08567134268537074,
+    "selected_tpr": 0.4375
+  },
+  "Consolidation": {
+    "selected": "openiC",
+    "openiD_n_pos": 0,
+    "openiD_n_neg": 0,
+    "openiC": {
+      "youden": null,
+      "fp": null,
+      "tpr": null
+    },
+    "weighted": {
+      "youden": null,
+      "fp": null,
+      "tpr": null
+    },
+    "pooled": {
+      "youden": null,
+      "fp": null,
+      "tpr": null
+    },
+    "selected_youden": null,
+    "selected_fp": null,
+    "selected_tpr": null
+  },
+  "Edema": {
+    "selected": "openiC",
+    "openiD_n_pos": 53,
+    "openiD_n_neg": 1959,
+    "openiC": {
+      "youden": 0.015935397993947897,
+      "fp": 0.27616130678917816,
+      "tpr": 0.7547169811320755
+    },
+    "weighted": {
+      "youden": 0.015935397993947897,
+      "fp": 0.27616130678917816,
+      "tpr": 0.7547169811320755
+    },
+    "pooled": {
+      "youden": 0.029429216878959597,
+      "fp": 0.147524247064829,
+      "tpr": 0.5660377358490566
+    },
+    "selected_youden": 0.015935397993947897,
+    "selected_fp": 0.27616130678917816,
+    "selected_tpr": 0.7547169811320755
+  },
+  "Emphysema": {
+    "selected": "openiC",
+    "openiD_n_pos": 39,
+    "openiD_n_neg": 1973,
+    "openiC": {
+      "youden": 0.0011048460173921234,
+      "fp": 0.8038520020273695,
+      "tpr": 0.9743589743589743
+    },
+    "weighted": {
+      "youden": 0.0011048460173921234,
+      "fp": 0.8038520020273695,
+      "tpr": 0.9743589743589743
+    },
+    "pooled": {
+      "youden": 0.0011048460173921234,
+      "fp": 0.8038520020273695,
+      "tpr": 0.9743589743589743
+    },
+    "selected_youden": 0.0011048460173921234,
+    "selected_fp": 0.8038520020273695,
+    "selected_tpr": 0.9743589743589743
+  },
+  "Fibrosis": {
+    "selected": "openiC",
+    "openiD_n_pos": 8,
+    "openiD_n_neg": 2004,
+    "openiC": {
+      "youden": 0.01035061461322595,
+      "fp": 0.38073852295409183,
+      "tpr": 0.5
+    },
+    "weighted": {
+      "youden": 0.01035061461322595,
+      "fp": 0.38073852295409183,
+      "tpr": 0.5
+    },
+    "pooled": {
+      "youden": 0.01035061461322595,
+      "fp": 0.38073852295409183,
+      "tpr": 0.5
+    },
+    "selected_youden": 0.01035061461322595,
+    "selected_fp": 0.38073852295409183,
+    "selected_tpr": 0.5
+  },
+  "Pleural_Thickening": {
+    "selected": "openiC",
+    "openiD_n_pos": 8,
+    "openiD_n_neg": 2004,
+    "openiC": {
+      "youden": 0.00944700018212173,
+      "fp": 0.38772455089820357,
+      "tpr": 0.625
+    },
+    "weighted": {
+      "youden": 0.007164735097560499,
+      "fp": 0.4655688622754491,
+      "tpr": 0.625
+    },
+    "pooled": {
+      "youden": 0.006502933106277084,
+      "fp": 0.4930139720558882,
+      "tpr": 0.75
+    },
+    "selected_youden": 0.00944700018212173,
+    "selected_fp": 0.38772455089820357,
+    "selected_tpr": 0.625
+  },
+  "Hernia": {
+    "selected": "openiC",
+    "openiD_n_pos": 16,
+    "openiD_n_neg": 1996,
+    "openiC": {
+      "youden": 0.0009467655557417442,
+      "fp": 0.4258517034068136,
+      "tpr": 0.625
+    },
+    "weighted": {
+      "youden": 0.0009467655557417442,
+      "fp": 0.4258517034068136,
+      "tpr": 0.625
+    },
+    "pooled": {
+      "youden": 0.0009467655557417442,
+      "fp": 0.4258517034068136,
+      "tpr": 0.625
+    },
+    "selected_youden": 0.0009467655557417442,
+    "selected_fp": 0.4258517034068136,
+    "selected_tpr": 0.625
+  }
+}

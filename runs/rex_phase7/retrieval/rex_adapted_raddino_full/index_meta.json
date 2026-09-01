@@ -1,0 +1,28 @@
+{
+  "source": "rex_adapted_s0",
+  "embed": "raddino(adapted), L2-normalized",
+  "dim": 1536,
+  "n_reference": 129113,
+  "space": "cosine",
+  "M": 32,
+  "ef_construction": 400,
+  "ef_search": 512,
+  "k": 10,
+  "recall_at_k": 1.0,
+  "recall_queries": 200,
+  "seed": 0,
+  "splits": {
+    "train": 112967,
+    "eval": 8082,
+    "cal": 8064
+  },
+  "correct_mode_pool_cal_eval": 5540,
+  "train_annotation_members": "xrv_nih + convnextv2_s0 + raddino @224 (arkswin omitted: no 768 PNGs for train)",
+  "normal_flags": "pred_normal = no class >= its adapted-cal Youden threshold; gt_normal = no positive among certain GT labels",
+  "label_free": "index.bin + store.npz hold ids+feats only; sidecar.parquet separate",
+  "parity_median_cos": 0.9982990026473999,
+  "parity_min_cos": 0.9643936157226562,
+  "parity_rows": 256,
+  "train_pass_seconds": 390.14586353302,
+  "train_n": 112967
+}

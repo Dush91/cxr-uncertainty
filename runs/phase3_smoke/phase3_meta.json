@@ -1,0 +1,93 @@
+{
+  "raw": {
+    "calibrator": "raw_youden",
+    "temperature_T": 1.0,
+    "n_members": 3,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino"
+    ],
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 1000,
+        "n_confident_wrong": 17,
+        "auroc_epistemic_std": 0.6558,
+        "auroc_mutual_info": 0.6165
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 500,
+        "n_confident_wrong": 6,
+        "auroc_epistemic_std": 0.7952,
+        "auroc_mutual_info": 0.7648
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 300,
+        "n_confident_wrong": 3,
+        "auroc_epistemic_std": 0.7385,
+        "auroc_mutual_info": 0.7183
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 200,
+        "n_confident_wrong": 3,
+        "auroc_epistemic_std": 0.8443,
+        "auroc_mutual_info": 0.775
+      }
+    ]
+  },
+  "calibrated": {
+    "calibrator": "bcts_ets_mondrian",
+    "alignment_set": "role_C_openi",
+    "n_members": 3,
+    "n_pathologies": 14,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino"
+    ],
+    "beta_slots_fit": 12,
+    "beta_slots_identity": 30,
+    "temperature_T": 0.7377,
+    "steps": [
+      "1_align",
+      "2_beta",
+      "3_disagreement_aligned",
+      "4_pool",
+      "5_temperature_pooled_mean"
+    ],
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 1000,
+        "n_confident_wrong": 22,
+        "auroc_epistemic_std": 0.713,
+        "auroc_mutual_info": 0.6659
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 500,
+        "n_confident_wrong": 7,
+        "auroc_epistemic_std": 0.7418,
+        "auroc_mutual_info": 0.7137
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 300,
+        "n_confident_wrong": 4,
+        "auroc_epistemic_std": 0.6917,
+        "auroc_mutual_info": 0.6993
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 200,
+        "n_confident_wrong": 3,
+        "auroc_epistemic_std": 0.7327,
+        "auroc_mutual_info": 0.6802
+      }
+    ]
+  }
+}

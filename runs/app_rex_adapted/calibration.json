@@ -1,0 +1,23 @@
+{
+  "youden": {
+    "Atelectasis": 0.18686573766171932,
+    "Cardiomegaly": 0.24610547721385956,
+    "Effusion": 0.12780552729964256,
+    "Infiltration": 0.32145870476961136,
+    "Mass": 0.04706761706620455,
+    "Nodule": null,
+    "Pneumonia": 0.14223814196884632,
+    "Pneumothorax": 0.03301658993586898,
+    "Consolidation": 0.059580808505415916,
+    "Edema": 0.18973268009722233,
+    "Emphysema": null,
+    "Fibrosis": null,
+    "Pleural_Thickening": 0.020043235388584435,
+    "Hernia": null
+  },
+  "conf_cut": 0.9261505413708635,
+  "unc_cut": 0.0028563625448808725,
+  "temperature": 0.7843,
+  "conf_pct": 10.0,
+  "unc_pct": 50.0
+}

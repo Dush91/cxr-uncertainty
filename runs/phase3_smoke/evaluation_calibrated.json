@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "n_images": 200,
+  "n_records": 2000,
+  "n_confident": 200,
+  "n_confident_wrong": 3,
+  "confident_error_auroc_std": 0.7326565143824028,
+  "confident_error_auroc_mi": 0.6802030456852792,
+  "confident_error_recall": 1.0,
+  "false_flag_rate": 0.49238578680203043,
+  "aurc": 0.005029469301214273,
+  "coverage_at_lowest_risk": [
+    0.005,
+    0.0
+  ],
+  "ece": 0.012122940302900686,
+  "per_pathology": {
+    "Atelectasis": {
+      "n": 200,
+      "positives": 17,
+      "task_auroc": 0.7348119575699132,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Cardiomegaly": {
+      "n": 200,
+      "positives": 21,
+      "task_auroc": 0.7983506251662676,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Effusion": {
+      "n": 200,
+      "positives": 10,
+      "task_auroc": 0.9221052631578948,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Infiltration": {
+      "n": 200,
+      "positives": 8,
+      "task_auroc": 0.4986979166666667,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Mass": {
+      "n": 200,
+      "positives": 2,
+      "task_auroc": 0.9141414141414141,
+      "confident_correct": 93,
+      "confident_wrong": 0,
+      "flagged": 41
+    },
+    "Pneumonia": {
+      "n": 200,
+      "positives": 2,
+      "task_auroc": 0.6515151515151515,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Pneumothorax": {
+      "n": 200,
+      "positives": 6,
+      "task_auroc": 0.5481099656357389,
+      "confident_correct": 100,
+      "confident_wrong": 3,
+      "flagged": 59
+    },
+    "Edema": {
+      "n": 200,
+      "positives": 7,
+      "task_auroc": 0.848260547742413,
+      "confident_correct": 4,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Emphysema": {
+      "n": 200,
+      "positives": 4,
+      "task_auroc": 0.7028061224489796,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Hernia": {
+      "n": 200,
+      "positives": 2,
+      "task_auroc": 0.5429292929292929,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    }
+  },
+  "error_type_counts": {
+    "confident_correct": 197,
+    "tentative_correct": 1054,
+    "confident_fp": 0,
+    "tentative_fp": 725,
+    "confident_fn": 3,
+    "tentative_fn": 21,
+    "unknown": 0
+  },
+  "risk_config": {
+    "decision_thresh": 0.5,
+    "conf_thresh": 0.6,
+    "unc_thresh": 0.15,
+    "mc_samples": 10,
+    "use_mc_dropout": true
+  }
+}

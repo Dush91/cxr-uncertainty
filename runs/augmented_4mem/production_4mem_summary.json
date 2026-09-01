@@ -1,0 +1,232 @@
+{
+  "sidecar": "/teamspace/studios/this_studio/runs/augmented_4mem/conformal_sidecar_4mem.json",
+  "T": 0.6335,
+  "member_keys": [
+    "xrv_nih",
+    "convnextv2",
+    "raddino",
+    "arkswin"
+  ],
+  "youden_source": {
+    "Atelectasis": "openiC",
+    "Cardiomegaly": "openiC",
+    "Effusion": "openiC",
+    "Infiltration": "openiC",
+    "Mass": "openiC",
+    "Nodule": "openiC",
+    "Pneumonia": "openiC",
+    "Pneumothorax": "openiC",
+    "Consolidation": "openiC",
+    "Edema": "openiC",
+    "Emphysema": "openiC",
+    "Fibrosis": "openiC",
+    "Pleural_Thickening": "openiC",
+    "Hernia": "openiC"
+  },
+  "comparison": {
+    "Atelectasis": {
+      "selected": "openiC",
+      "openiC_youden": 0.06309738291921187,
+      "weighted_youden": 0.08688752136181711,
+      "pooled_youden": 0.08688752136181711,
+      "openiD_openiC": {
+        "fp": 0.30120481927710846,
+        "tpr": 0.7634408602150538
+      },
+      "openiD_weighted": {
+        "fp": 0.19660460021905804,
+        "tpr": 0.6182795698924731
+      },
+      "openiD_pooled": {
+        "fp": 0.19660460021905804,
+        "tpr": 0.6182795698924731
+      }
+    },
+    "Cardiomegaly": {
+      "selected": "openiC",
+      "openiC_youden": 0.03044919470754324,
+      "weighted_youden": 0.029628245311383975,
+      "pooled_youden": 0.029628245311383975,
+      "openiD_openiC": {
+        "fp": 0.1742627345844504,
+        "tpr": 0.8027210884353742
+      },
+      "openiD_weighted": {
+        "fp": 0.18176943699731904,
+        "tpr": 0.8163265306122449
+      },
+      "openiD_pooled": {
+        "fp": 0.18176943699731904,
+        "tpr": 0.8163265306122449
+      }
+    },
+    "Effusion": {
+      "selected": "openiC",
+      "openiC_youden": 0.05918087190329594,
+      "weighted_youden": 0.09200195148870255,
+      "pooled_youden": 0.1171423268836119,
+      "openiD_openiC": {
+        "fp": 0.16327595200834638,
+        "tpr": 0.8
+      },
+      "openiD_weighted": {
+        "fp": 0.0782472613458529,
+        "tpr": 0.7578947368421053
+      },
+      "openiD_pooled": {
+        "fp": 0.05268648930620762,
+        "tpr": 0.7157894736842105
+      }
+    },
+    "Infiltration": {
+      "selected": "openiC",
+      "openiC_youden": 0.11503436074668082,
+      "weighted_youden": 0.11503436074668082,
+      "pooled_youden": 0.16506396899526113,
+      "openiD_openiC": {
+        "fp": 0.20512820512820512,
+        "tpr": 0.5483870967741935
+      },
+      "openiD_weighted": {
+        "fp": 0.20512820512820512,
+        "tpr": 0.5483870967741935
+      },
+      "openiD_pooled": {
+        "fp": 0.08717948717948718,
+        "tpr": 0.3870967741935484
+      }
+    },
+    "Mass": {
+      "selected": "openiC",
+      "openiC_youden": 0.009064703400018212,
+      "weighted_youden": 0.009064703400018212,
+      "pooled_youden": 0.01849828781127332,
+      "openiD_openiC": {
+        "fp": 0.4773293472845042,
+        "tpr": 1.0
+      },
+      "openiD_weighted": {
+        "fp": 0.4773293472845042,
+        "tpr": 1.0
+      },
+      "openiD_pooled": {
+        "fp": 0.3094170403587444,
+        "tpr": 0.8
+      }
+    },
+    "Nodule": {
+      "selected": "openiC",
+      "openiC_youden": 0.033722694769416604
+    },
+    "Pneumonia": {
+      "selected": "openiC",
+      "openiC_youden": 0.008187438748674754
+    },
+    "Pneumothorax": {
+      "selected": "openiC",
+      "openiC_youden": 0.039742689568459964,
+      "weighted_youden": 0.03930895074303098,
+      "pooled_youden": 0.03930895074303098,
+      "openiD_openiC": {
+        "fp": 0.0405811623246493,
+        "tpr": 0.6875
+      },
+      "openiD_weighted": {
+        "fp": 0.04158316633266533,
+        "tpr": 0.6875
+      },
+      "openiD_pooled": {
+        "fp": 0.04158316633266533,
+        "tpr": 0.6875
+      }
+    },
+    "Consolidation": {
+      "selected": "openiC",
+      "openiC_youden": null
+    },
+    "Edema": {
+      "selected": "openiC",
+      "openiC_youden": 0.03789496786107495,
+      "weighted_youden": 0.03789496786107495,
+      "pooled_youden": 0.03789496786107495,
+      "openiD_openiC": {
+        "fp": 0.07350689127105667,
+        "tpr": 0.660377358490566
+      },
+      "openiD_weighted": {
+        "fp": 0.07350689127105667,
+        "tpr": 0.660377358490566
+      },
+      "openiD_pooled": {
+        "fp": 0.07350689127105667,
+        "tpr": 0.660377358490566
+      }
+    },
+    "Emphysema": {
+      "selected": "openiC",
+      "openiC_youden": 0.0009897004446966404
+    },
+    "Fibrosis": {
+      "selected": "openiC",
+      "openiC_youden": 0.027056819509475617
+    },
+    "Pleural_Thickening": {
+      "selected": "openiC",
+      "openiC_youden": 0.008417756786780625,
+      "weighted_youden": 0.008417756786780625,
+      "pooled_youden": 0.008417756786780625,
+      "openiD_openiC": {
+        "fp": 0.36177644710578843,
+        "tpr": 0.75
+      },
+      "openiD_weighted": {
+        "fp": 0.36177644710578843,
+        "tpr": 0.75
+      },
+      "openiD_pooled": {
+        "fp": 0.36177644710578843,
+        "tpr": 0.75
+      }
+    },
+    "Hernia": {
+      "selected": "openiC",
+      "openiC_youden": 0.0012472066475229361
+    }
+  },
+  "evaluation": {
+    "openiD_all": {
+      "n_confident": 2616,
+      "n_confident_wrong": 4,
+      "aurc": 0.0014960234562152435,
+      "ece": 0.004732357192332044,
+      "ce_std": 0.49808575803981625,
+      "ce_mi": 0.45118683001531396,
+      "ce_maha": 0.8393472434915773,
+      "cov": 0.89738492124178,
+      "refer": 0.08655757761125554
+    },
+    "kermany_pneu": {
+      "n_confident": 586,
+      "n_confident_wrong": 196,
+      "aurc": 0.4050350710528229,
+      "ece": 0.718935682647442,
+      "ce_std": 0.4347854526425955,
+      "ce_mi": 0.3468341182626897,
+      "ce_maha": 0.7705651491365777,
+      "cov": 0.2694672131147541,
+      "refer": 0.06454918032786885
+    },
+    "covid_pneu": {
+      "n_confident": 203,
+      "n_confident_wrong": 79,
+      "aurc": 0.5540826971494954,
+      "ece": 0.6903986939318648,
+      "ce_std": 0.32380563495304204,
+      "ce_mi": 0.2954267047774602,
+      "ce_maha": 0.4032258064516129,
+      "cov": 0.29150197628458496,
+      "refer": 0.14575098814229248
+    }
+  },
+  "alpha": 0.1
+}

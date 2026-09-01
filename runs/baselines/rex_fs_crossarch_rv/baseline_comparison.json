@@ -1,0 +1,662 @@
+{
+  "dataset": "rex_fs_crossarch_rv",
+  "ensemble": {
+    "member_keys": [
+      "resnet18_s0",
+      "vit_tiny_s0"
+    ],
+    "n_cal": 8064,
+    "n_eval": 8082,
+    "n_eval_certain_rows": 78311,
+    "n_records": 78311,
+    "n_confident": 7833,
+    "n_confident_wrong": 27,
+    "conf_pct": 10.0,
+    "unc_pct": 50.0,
+    "has_uncertain_labels": true
+  },
+  "self_check": {
+    "n_confident": 7833,
+    "n_confident_wrong": 27,
+    "std_auroc_top10": 0.5266,
+    "maha_auroc_top10": 0.4685
+  },
+  "panel_a_single_member_self_detection": [
+    {
+      "top_pct": 50,
+      "n": 39158,
+      "n_wrong": 935,
+      "resnet18_s0": 0.2542,
+      "vit_tiny_s0": 0.2474
+    },
+    {
+      "top_pct": 25,
+      "n": 19581,
+      "n_wrong": 140,
+      "resnet18_s0": 0.3517,
+      "vit_tiny_s0": 0.3242
+    },
+    {
+      "top_pct": 15,
+      "n": 11750,
+      "n_wrong": 51,
+      "resnet18_s0": 0.4075,
+      "vit_tiny_s0": 0.3619
+    },
+    {
+      "top_pct": 10,
+      "n": 7833,
+      "n_wrong": 27,
+      "resnet18_s0": 0.4459,
+      "vit_tiny_s0": 0.4086
+    },
+    {
+      "top_pct": 5,
+      "n": 3916,
+      "n_wrong": 9,
+      "resnet18_s0": 0.5649,
+      "vit_tiny_s0": 0.4194
+    }
+  ],
+  "panel_b_within_ensemble_confident_set": [
+    {
+      "top_pct": 50,
+      "n": 39157,
+      "n_wrong": 819,
+      "epistemic_std": 0.7605,
+      "mutual_info": 0.6603,
+      "entropy": 0.8445,
+      "confidence": 0.7494,
+      "mahalanobis": 0.5271,
+      "knn": 0.5902,
+      "energy": 0.3218,
+      "conf_resnet18_s0": 0.7063,
+      "conf_vit_tiny_s0": 0.652,
+      "hybrid_std_knn": 0.7605,
+      "hybrid_std_maha": 0.7605
+    },
+    {
+      "top_pct": 25,
+      "n": 19578,
+      "n_wrong": 123,
+      "epistemic_std": 0.6602,
+      "mutual_info": 0.577,
+      "entropy": 0.7603,
+      "confidence": 0.6382,
+      "mahalanobis": 0.4873,
+      "knn": 0.4899,
+      "energy": 0.503,
+      "conf_resnet18_s0": 0.6272,
+      "conf_vit_tiny_s0": 0.5614,
+      "hybrid_std_knn": 0.6602,
+      "hybrid_std_maha": 0.6602
+    },
+    {
+      "top_pct": 15,
+      "n": 11747,
+      "n_wrong": 48,
+      "epistemic_std": 0.5865,
+      "mutual_info": 0.5199,
+      "entropy": 0.6778,
+      "confidence": 0.573,
+      "mahalanobis": 0.4828,
+      "knn": 0.4877,
+      "energy": 0.5839,
+      "conf_resnet18_s0": 0.5929,
+      "conf_vit_tiny_s0": 0.5271,
+      "hybrid_std_knn": 0.5865,
+      "hybrid_std_maha": 0.5865
+    },
+    {
+      "top_pct": 10,
+      "n": 7833,
+      "n_wrong": 27,
+      "epistemic_std": 0.5266,
+      "mutual_info": 0.4859,
+      "entropy": 0.613,
+      "confidence": 0.5348,
+      "mahalanobis": 0.4685,
+      "knn": 0.4984,
+      "energy": 0.5729,
+      "conf_resnet18_s0": 0.5634,
+      "conf_vit_tiny_s0": 0.54,
+      "hybrid_std_knn": 0.5266,
+      "hybrid_std_maha": 0.5266
+    },
+    {
+      "top_pct": 5,
+      "n": 3916,
+      "n_wrong": 13,
+      "epistemic_std": 0.4598,
+      "mutual_info": 0.4154,
+      "entropy": 0.6572,
+      "confidence": 0.5813,
+      "mahalanobis": 0.509,
+      "knn": 0.5211,
+      "energy": 0.5161,
+      "conf_resnet18_s0": 0.673,
+      "conf_vit_tiny_s0": 0.4852,
+      "hybrid_std_knn": 0.4598,
+      "hybrid_std_maha": 0.4598
+    }
+  ],
+  "aurc_e_aurc_full_eval": {
+    "epistemic_std": {
+      "aurc": 0.1214,
+      "e_aurc": 0.094,
+      "auac": 0.8786,
+      "error_rate": 0.2247
+    },
+    "mutual_info": {
+      "aurc": 0.1675,
+      "e_aurc": 0.1401,
+      "auac": 0.8325,
+      "error_rate": 0.2247
+    },
+    "entropy": {
+      "aurc": 0.0844,
+      "e_aurc": 0.057,
+      "auac": 0.9156,
+      "error_rate": 0.2247
+    },
+    "confidence": {
+      "aurc": 0.049,
+      "e_aurc": 0.0216,
+      "auac": 0.951,
+      "error_rate": 0.2247
+    },
+    "mahalanobis": {
+      "aurc": 0.2148,
+      "e_aurc": 0.1875,
+      "auac": 0.7851,
+      "error_rate": 0.2247
+    },
+    "knn": {
+      "aurc": 0.1448,
+      "e_aurc": 0.1174,
+      "auac": 0.8552,
+      "error_rate": 0.2247
+    },
+    "energy": {
+      "aurc": 0.3611,
+      "e_aurc": 0.3337,
+      "auac": 0.6389,
+      "error_rate": 0.2247
+    },
+    "conf_resnet18_s0": {
+      "aurc": 0.0638,
+      "e_aurc": 0.0364,
+      "auac": 0.9362,
+      "error_rate": 0.2247
+    },
+    "conf_vit_tiny_s0": {
+      "aurc": 0.0722,
+      "e_aurc": 0.0448,
+      "auac": 0.9278,
+      "error_rate": 0.2247
+    },
+    "hybrid_std_knn": {
+      "aurc": 0.1214,
+      "e_aurc": 0.094,
+      "auac": 0.8786,
+      "error_rate": 0.2247
+    },
+    "hybrid_std_maha": {
+      "aurc": 0.1214,
+      "e_aurc": 0.094,
+      "auac": 0.8786,
+      "error_rate": 0.2247
+    }
+  },
+  "per_pathology_correctness_auroc": {
+    "per_pathology": {
+      "Atelectasis": {
+        "n": 7566,
+        "n_wrong": 1445,
+        "auroc": {
+          "epistemic_std": 0.7519,
+          "mutual_info": 0.6609,
+          "entropy": 0.8967,
+          "confidence": 0.8589,
+          "mahalanobis": 0.4875,
+          "knn": 0.6056,
+          "hybrid_std_knn": 0.7519,
+          "hybrid_std_maha": 0.7519
+        }
+      },
+      "Cardiomegaly": {
+        "n": 7823,
+        "n_wrong": 1422,
+        "auroc": {
+          "epistemic_std": 0.7336,
+          "mutual_info": 0.6396,
+          "entropy": 0.8645,
+          "confidence": 0.8423,
+          "mahalanobis": 0.5118,
+          "knn": 0.6036,
+          "hybrid_std_knn": 0.7336,
+          "hybrid_std_maha": 0.7336
+        }
+      },
+      "Consolidation": {
+        "n": 7997,
+        "n_wrong": 1386,
+        "auroc": {
+          "epistemic_std": 0.8634,
+          "mutual_info": 0.7139,
+          "entropy": 0.979,
+          "confidence": 0.9727,
+          "mahalanobis": 0.5675,
+          "knn": 0.7584,
+          "hybrid_std_knn": 0.8634,
+          "hybrid_std_maha": 0.8634
+        }
+      },
+      "Edema": {
+        "n": 7602,
+        "n_wrong": 1035,
+        "auroc": {
+          "epistemic_std": 0.8792,
+          "mutual_info": 0.7886,
+          "entropy": 0.9585,
+          "confidence": 0.9331,
+          "mahalanobis": 0.5362,
+          "knn": 0.6519,
+          "hybrid_std_knn": 0.8792,
+          "hybrid_std_maha": 0.8792
+        }
+      },
+      "Effusion": {
+        "n": 7887,
+        "n_wrong": 908,
+        "auroc": {
+          "epistemic_std": 0.8403,
+          "mutual_info": 0.7444,
+          "entropy": 0.9371,
+          "confidence": 0.9175,
+          "mahalanobis": 0.5357,
+          "knn": 0.6955,
+          "hybrid_std_knn": 0.8403,
+          "hybrid_std_maha": 0.8403
+        }
+      },
+      "Infiltration": {
+        "n": 7736,
+        "n_wrong": 1978,
+        "auroc": {
+          "epistemic_std": 0.6084,
+          "mutual_info": 0.5394,
+          "entropy": 0.7915,
+          "confidence": 0.7645,
+          "mahalanobis": 0.5453,
+          "knn": 0.6088,
+          "hybrid_std_knn": 0.6084,
+          "hybrid_std_maha": 0.6084
+        }
+      },
+      "Mass": {
+        "n": 8027,
+        "n_wrong": 2102,
+        "auroc": {
+          "epistemic_std": 0.8055,
+          "mutual_info": 0.6792,
+          "entropy": 0.9624,
+          "confidence": 0.9532,
+          "mahalanobis": 0.5108,
+          "knn": 0.5886,
+          "hybrid_std_knn": 0.8055,
+          "hybrid_std_maha": 0.8055
+        }
+      },
+      "Pleural_Thickening": {
+        "n": 8049,
+        "n_wrong": 2539,
+        "auroc": {
+          "epistemic_std": 0.8532,
+          "mutual_info": 0.6916,
+          "entropy": 0.9872,
+          "confidence": 0.9839,
+          "mahalanobis": 0.5087,
+          "knn": 0.5918,
+          "hybrid_std_knn": 0.8532,
+          "hybrid_std_maha": 0.8532
+        }
+      },
+      "Pneumonia": {
+        "n": 7590,
+        "n_wrong": 2084,
+        "auroc": {
+          "epistemic_std": 0.7747,
+          "mutual_info": 0.6249,
+          "entropy": 0.9446,
+          "confidence": 0.9204,
+          "mahalanobis": 0.521,
+          "knn": 0.7035,
+          "hybrid_std_knn": 0.7747,
+          "hybrid_std_maha": 0.7747
+        }
+      },
+      "Pneumothorax": {
+        "n": 8034,
+        "n_wrong": 2700,
+        "auroc": {
+          "epistemic_std": 0.7738,
+          "mutual_info": 0.6275,
+          "entropy": 0.984,
+          "confidence": 0.9798,
+          "mahalanobis": 0.6188,
+          "knn": 0.6726,
+          "hybrid_std_knn": 0.7738,
+          "hybrid_std_maha": 0.7738
+        }
+      }
+    },
+    "macro": {
+      "epistemic_std": 0.7884,
+      "mutual_info": 0.671,
+      "entropy": 0.9305,
+      "confidence": 0.9126,
+      "mahalanobis": 0.5343,
+      "knn": 0.648,
+      "hybrid_std_knn": 0.7884,
+      "hybrid_std_maha": 0.7884
+    }
+  },
+  "ts_calibrated_confidence": {
+    "temperature": 0.8306,
+    "ece_raw": 0.0254,
+    "ece_ts": 0.0115,
+    "auroc_pbar_raw_top10": 0.387,
+    "auroc_pbar_ts_top10": 0.387,
+    "max_abs_auroc_diff": 0.0
+  },
+  "statistical_tests": {
+    "delong_full_epistemic_vs_confidence": {
+      "auc_a": 0.7183,
+      "auc_b": 0.9197,
+      "z": null,
+      "p": null
+    },
+    "delong_full_epistemic_vs_best_member_resnet18_s0": {
+      "auc_a": 0.7183,
+      "auc_b": 0.8607,
+      "z": null,
+      "p": null
+    },
+    "delong_full_epistemic_vs_mahalanobis": {
+      "auc_a": 0.7183,
+      "auc_b": 0.5354,
+      "z": 325.0988,
+      "p": 0.0
+    },
+    "delong_conf_top50_epistemic_vs_confidence": {
+      "auc_a": 0.7605,
+      "auc_b": 0.7494,
+      "z": 2.0253,
+      "p": 0.0428
+    },
+    "delong_conf_top50_epistemic_vs_best_member_resnet18_s0": {
+      "auc_a": 0.7605,
+      "auc_b": 0.7063,
+      "z": 33.0043,
+      "p": 0.0
+    },
+    "delong_conf_top50_epistemic_vs_mahalanobis": {
+      "auc_a": 0.7605,
+      "auc_b": 0.5271,
+      "z": 83.797,
+      "p": 0.0
+    },
+    "delong_conf_top10_epistemic_vs_confidence": {
+      "auc_a": 0.5266,
+      "auc_b": 0.5348,
+      "z": -0.2629,
+      "p": 0.7926
+    },
+    "delong_conf_top10_epistemic_vs_best_member_resnet18_s0": {
+      "auc_a": 0.5266,
+      "auc_b": 0.5634,
+      "z": null,
+      "p": null
+    },
+    "delong_conf_top10_epistemic_vs_mahalanobis": {
+      "auc_a": 0.5266,
+      "auc_b": 0.4685,
+      "z": 4.1505,
+      "p": 0.0
+    },
+    "bootstrap_epistemic_std_auroc_ci95_conf_top50": [
+      0.7411,
+      0.7773
+    ],
+    "bootstrap_epistemic_std_auroc_ci95_conf_top10": [
+      0.4149,
+      0.6402
+    ],
+    "mcnemar_epistemic_vs_confidence": {
+      "chi2": 0.0003,
+      "p": 0.986
+    },
+    "hybrid": {
+      "weight_on_std": 1.0,
+      "cal_selection_auroc_top50": 0.7632,
+      "grid_auroc_top50_cal": {
+        "0.0": 0.6018,
+        "0.25": 0.6444,
+        "0.5": 0.688,
+        "0.75": 0.7349,
+        "1.0": 0.7632
+      }
+    },
+    "boot_paired_hybrid_vs_epistemic_std_auroc_conf_top50": [
+      0.0,
+      0.0
+    ],
+    "boot_paired_hybrid_vs_knn_auroc_conf_top50": [
+      0.1463,
+      0.1937
+    ],
+    "boot_paired_hybrid_vs_mahalanobis_auroc_conf_top50": [
+      0.206,
+      0.2607
+    ],
+    "boot_paired_hybrid_vs_entropy_auroc_conf_top50": [
+      -0.0973,
+      -0.0708
+    ],
+    "boot_paired_hybrid_vs_confidence_auroc_conf_top50": [
+      -0.0075,
+      0.0276
+    ],
+    "boot_paired_hybrid_vs_epistemic_std_auroc_conf_top10": [
+      0.0,
+      0.0
+    ],
+    "boot_paired_hybrid_vs_knn_auroc_conf_top10": [
+      -0.1199,
+      0.1852
+    ],
+    "boot_paired_hybrid_vs_mahalanobis_auroc_conf_top10": [
+      -0.096,
+      0.2091
+    ],
+    "boot_paired_hybrid_vs_entropy_auroc_conf_top10": [
+      -0.1851,
+      0.0145
+    ],
+    "boot_paired_hybrid_vs_confidence_auroc_conf_top10": [
+      -0.1286,
+      0.1136
+    ],
+    "boot_paired_hybrid_vs_confidence_eaurc_full": [
+      0.0701,
+      0.0749
+    ]
+  },
+  "task2_uncertain_label_auroc": {
+    "per_pathology": {
+      "Atelectasis": {
+        "n": 8082,
+        "n_uncertain": 516,
+        "auroc": {
+          "epistemic_std": 0.6689,
+          "mutual_info": 0.6131,
+          "entropy": 0.737,
+          "confidence": 0.6756,
+          "mahalanobis": 0.4974,
+          "knn": 0.5778,
+          "energy": 0.2921,
+          "hybrid_std_knn": 0.6689,
+          "hybrid_std_maha": 0.6689
+        }
+      },
+      "Cardiomegaly": {
+        "n": 8082,
+        "n_uncertain": 259,
+        "auroc": {
+          "epistemic_std": 0.6953,
+          "mutual_info": 0.6321,
+          "entropy": 0.7529,
+          "confidence": 0.7348,
+          "mahalanobis": 0.5186,
+          "knn": 0.6077,
+          "energy": 0.2608,
+          "hybrid_std_knn": 0.6953,
+          "hybrid_std_maha": 0.6953
+        }
+      },
+      "Consolidation": {
+        "n": 8082,
+        "n_uncertain": 85,
+        "auroc": {
+          "epistemic_std": 0.6323,
+          "mutual_info": 0.5726,
+          "entropy": 0.7024,
+          "confidence": 0.6867,
+          "mahalanobis": 0.5188,
+          "knn": 0.5838,
+          "energy": 0.2981,
+          "hybrid_std_knn": 0.6323,
+          "hybrid_std_maha": 0.6323
+        }
+      },
+      "Edema": {
+        "n": 8082,
+        "n_uncertain": 480,
+        "auroc": {
+          "epistemic_std": 0.7743,
+          "mutual_info": 0.715,
+          "entropy": 0.8195,
+          "confidence": 0.7668,
+          "mahalanobis": 0.5142,
+          "knn": 0.6002,
+          "energy": 0.2169,
+          "hybrid_std_knn": 0.7743,
+          "hybrid_std_maha": 0.7743
+        }
+      },
+      "Effusion": {
+        "n": 8082,
+        "n_uncertain": 195,
+        "auroc": {
+          "epistemic_std": 0.7085,
+          "mutual_info": 0.6525,
+          "entropy": 0.7541,
+          "confidence": 0.7155,
+          "mahalanobis": 0.5347,
+          "knn": 0.5943,
+          "energy": 0.2919,
+          "hybrid_std_knn": 0.7085,
+          "hybrid_std_maha": 0.7085
+        }
+      },
+      "Infiltration": {
+        "n": 8082,
+        "n_uncertain": 346,
+        "auroc": {
+          "epistemic_std": 0.5439,
+          "mutual_info": 0.4956,
+          "entropy": 0.6683,
+          "confidence": 0.6268,
+          "mahalanobis": 0.5356,
+          "knn": 0.5833,
+          "energy": 0.3353,
+          "hybrid_std_knn": 0.5439,
+          "hybrid_std_maha": 0.5439
+        }
+      },
+      "Mass": {
+        "n": 8082,
+        "n_uncertain": 55,
+        "auroc": {
+          "epistemic_std": 0.7512,
+          "mutual_info": 0.6973,
+          "entropy": 0.7657,
+          "confidence": 0.6706,
+          "mahalanobis": 0.5443,
+          "knn": 0.6458,
+          "energy": 0.2691,
+          "hybrid_std_knn": 0.7512,
+          "hybrid_std_maha": 0.7512
+        }
+      },
+      "Pleural_Thickening": {
+        "n": 8082,
+        "n_uncertain": 33,
+        "auroc": {
+          "epistemic_std": 0.7538,
+          "mutual_info": 0.6412,
+          "entropy": 0.8142,
+          "confidence": 0.719,
+          "mahalanobis": 0.5184,
+          "knn": 0.6729,
+          "energy": 0.3044,
+          "hybrid_std_knn": 0.7538,
+          "hybrid_std_maha": 0.7538
+        }
+      },
+      "Pneumonia": {
+        "n": 8082,
+        "n_uncertain": 492,
+        "auroc": {
+          "epistemic_std": 0.6486,
+          "mutual_info": 0.5531,
+          "entropy": 0.7893,
+          "confidence": 0.699,
+          "mahalanobis": 0.4571,
+          "knn": 0.6192,
+          "energy": 0.2438,
+          "hybrid_std_knn": 0.6486,
+          "hybrid_std_maha": 0.6486
+        }
+      },
+      "Pneumothorax": {
+        "n": 8082,
+        "n_uncertain": 48,
+        "auroc": {
+          "epistemic_std": 0.5775,
+          "mutual_info": 0.5637,
+          "entropy": 0.5712,
+          "confidence": 0.558,
+          "mahalanobis": 0.5622,
+          "knn": 0.4977,
+          "energy": 0.5112,
+          "hybrid_std_knn": 0.5775,
+          "hybrid_std_maha": 0.5775
+        }
+      }
+    },
+    "macro": {
+      "epistemic_std": 0.6754,
+      "mutual_info": 0.6136,
+      "entropy": 0.7375,
+      "confidence": 0.6853,
+      "mahalanobis": 0.5201,
+      "knn": 0.5983,
+      "energy": 0.3024,
+      "hybrid_std_knn": 0.6754,
+      "hybrid_std_maha": 0.6754
+    },
+    "n_uncertain_total": 2509
+  }
+}

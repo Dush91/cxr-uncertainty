@@ -1,0 +1,74 @@
+{
+  "kermany": {
+    "n_images": 64,
+    "n_pneumonia_eval": 64,
+    "pneumonia_prevalence": 0.0,
+    "report": {
+      "schema_version": 2,
+      "n_images": 64,
+      "n_records": 64,
+      "n_confident": 7,
+      "n_confident_wrong": 0,
+      "confident_error_auroc_std": null,
+      "confident_error_auroc_mi": null,
+      "confident_error_recall": null,
+      "false_flag_rate": null,
+      "aurc": null,
+      "coverage_at_lowest_risk": null,
+      "ece": 0.011007095048322618,
+      "per_pathology": {
+        "Pneumonia": {
+          "n": 64,
+          "positives": 0,
+          "task_auroc": null,
+          "confident_correct": 7,
+          "confident_wrong": 0,
+          "flagged": 4
+        }
+      },
+      "error_type_counts": {
+        "confident_correct": 7,
+        "tentative_correct": 25,
+        "confident_fp": 0,
+        "tentative_fp": 32,
+        "confident_fn": 0,
+        "tentative_fn": 0,
+        "unknown": 0
+      },
+      "risk_config": {
+        "decision_thresh": 0.5,
+        "conf_thresh": 0.6,
+        "unc_thresh": 0.15,
+        "mc_samples": 10,
+        "use_mc_dropout": true
+      }
+    },
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 32,
+        "n_confident_wrong": 1,
+        "auroc_epistemic_std": 1.0,
+        "auroc_mutual_info": 1.0
+      }
+    ],
+    "meta": {
+      "calibrator": "ts",
+      "use_beta": false,
+      "use_ts": true,
+      "alignment_set": "none",
+      "n_members": 3,
+      "n_pathologies": 14,
+      "member_keys": [
+        "xrv_nih",
+        "convnextv2",
+        "raddino"
+      ],
+      "beta_slots_fit": 0,
+      "beta_slots_identity": 42,
+      "temperature_T": 0.6301
+    },
+    "monotonic": true,
+    "temperature_T": 0.6301
+  }
+}

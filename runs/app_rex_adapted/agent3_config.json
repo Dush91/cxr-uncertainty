@@ -1,0 +1,37 @@
+{
+  "component": "Agent 3 -- Error Explanation Agent (evidence-grounded constrained renderer)",
+  "schema": "agent3_evidence_v1",
+  "provider_chain_auto": ["ollama_local", "ollama_cloud (if OLLAMA_API_KEY set)", "template"],
+  "cloud_base": "https://ollama.com",
+  "local_base": "http://127.0.0.1:11434",
+  "default_cloud_model": "glm-4.6",
+  "temperature": 0.2,
+  "seed": 1234,
+  "timeout_s": 60,
+  "retries": 0,
+  "note": "single-shot; the evidence pack is the chain of thought. OLLAMA_API_KEY is env-only and never enters evidence/prompt/artifacts.",
+  "faithfulness_gate": {
+    "audit": "citation validity; numeric grounding (2% rel tol, ranges split, citation ids stripped); NIH-lexicon class grounding; local band agreement; 200-word cap; coverage advisory",
+    "tolerance": "0 -- a rendering failing the audit is replaced by the deterministic template + red note",
+    "proof": "scripts/agent3_batch.py --sample 50 --render --backend template -> faithfulness_report.json n_gate_failures=0 (2026-09-01)"
+  },
+  "privacy": {
+    "builder_never_emits": ["image_path", "patient_id"],
+    "case_ref": "sha1(path)[:8]",
+    "gt": "include_gt=True only in offline batch; app passes include_gt=False",
+    "pixels": "never leave the machine -- LLM sees computed metrics only"
+  },
+  "band_calibration": {
+    "source": "runs/app_rex_adapted/agent3_quality_stats.json",
+    "n_images": 1010,
+    "stratified_by": "view",
+    "seed": 1234,
+    "rule": "fixed quintiles p20/p40/p60/p80 per metric per view; clip_lo+clip_hi>0.10 -> 'high clipping'; missing table -> 'unavailable'"
+  },
+  "app": {
+    "port": 7862,
+    "output_index": 8,
+    "button": "Explain this prediction (Agent 3)",
+    "backends": ["auto", "template"]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "source": "rex_fs_vit_tiny",
+  "members": [
+    "vit_tiny_s0",
+    "vit_tiny_s1",
+    "vit_tiny_s2",
+    "vit_tiny_s3",
+    "vit_tiny_s4"
+  ],
+  "backbone": "vit_tiny",
+  "nseeds": 5,
+  "feature_member": "vit_tiny_s0",
+  "n_cal": 8064,
+  "n_eval": 8082,
+  "img_size": 224,
+  "device": "cuda",
+  "mahalanobis": {
+    "class": "Pneumonia",
+    "class_idx": 6,
+    "n_per_class": {
+      "0": 7189,
+      "1": 408
+    }
+  },
+  "n_uncertain_eval_rows": 2509,
+  "files": [
+    "arrays_rex_fs_vit_tinycal.npz",
+    "arrays_rex_fs_vit_tinyeval.npz"
+  ]
+}

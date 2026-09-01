@@ -1,0 +1,42 @@
+{
+  "temperature_T": 0.6301,
+  "tau_p": {
+    "Atelectasis": 0.198051,
+    "Cardiomegaly": 0.080667,
+    "Edema": 0.042966,
+    "Effusion": 0.116926,
+    "Emphysema": 0.11092,
+    "Fibrosis": 0.049218,
+    "Hernia": 0.030181,
+    "Infiltration": 0.175256,
+    "Mass": 0.067805,
+    "Nodule": 0.068117,
+    "Pleural_Thickening": 0.029055,
+    "Pneumonia": 0.038612,
+    "Pneumothorax": 0.032974
+  },
+  "rare_group": [],
+  "pooled_tau": null,
+  "alpha": 0.1,
+  "pathologies": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Hernia"
+  ],
+  "member_keys": [
+    "xrv_nih",
+    "convnextv2",
+    "raddino"
+  ]
+}

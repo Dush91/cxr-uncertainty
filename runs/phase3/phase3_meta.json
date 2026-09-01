@@ -1,0 +1,108 @@
+{
+  "raw": {
+    "calibrator": "raw",
+    "use_beta": false,
+    "use_ts": false,
+    "alignment_set": "none",
+    "n_members": 3,
+    "n_pathologies": 14,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino"
+    ],
+    "beta_slots_fit": 0,
+    "beta_slots_identity": 42,
+    "temperature_T": 1.0,
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 13078,
+        "n_confident_wrong": 387,
+        "auroc_epistemic_std": 0.8891,
+        "auroc_mutual_info": 0.8337
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 6539,
+        "n_confident_wrong": 33,
+        "auroc_epistemic_std": 0.6953,
+        "auroc_mutual_info": 0.6405
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 3924,
+        "n_confident_wrong": 16,
+        "auroc_epistemic_std": 0.6981,
+        "auroc_mutual_info": 0.6228
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 2616,
+        "n_confident_wrong": 8,
+        "auroc_epistemic_std": 0.6385,
+        "auroc_mutual_info": 0.6241
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 1308,
+        "n_confident_wrong": 2,
+        "auroc_epistemic_std": 0.4227,
+        "auroc_mutual_info": 0.4181
+      }
+    ]
+  },
+  "calibrated": {
+    "calibrator": "beta+ts",
+    "use_beta": true,
+    "use_ts": true,
+    "alignment_set": "role_C_openi",
+    "n_members": 3,
+    "n_pathologies": 14,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino"
+    ],
+    "beta_slots_fit": 33,
+    "beta_slots_identity": 9,
+    "temperature_T": 0.8932,
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 13078,
+        "n_confident_wrong": 156,
+        "auroc_epistemic_std": 0.7258,
+        "auroc_mutual_info": 0.6717
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 6539,
+        "n_confident_wrong": 34,
+        "auroc_epistemic_std": 0.5862,
+        "auroc_mutual_info": 0.5054
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 3924,
+        "n_confident_wrong": 14,
+        "auroc_epistemic_std": 0.5154,
+        "auroc_mutual_info": 0.4347
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 2616,
+        "n_confident_wrong": 9,
+        "auroc_epistemic_std": 0.4504,
+        "auroc_mutual_info": 0.3521
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 1308,
+        "n_confident_wrong": 4,
+        "auroc_epistemic_std": 0.2893,
+        "auroc_mutual_info": 0.1327
+      }
+    ]
+  }
+}

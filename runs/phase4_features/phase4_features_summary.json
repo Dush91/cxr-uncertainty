@@ -1,0 +1,795 @@
+{
+  "openiD_all": {
+    "title": "openiD (in-distribution, all valid classes)",
+    "n_images": 2012,
+    "n_eval_rows": 26156,
+    "pneumonia_prevalence": 0.019880715705765408,
+    "report": {
+      "schema_version": 2,
+      "n_images": 2012,
+      "n_records": 26156,
+      "n_confident": 2616,
+      "n_confident_wrong": 8,
+      "confident_error_auroc_std": 0.6313746165644172,
+      "confident_error_auroc_mi": 0.6190088190184049,
+      "confident_error_recall": 0.75,
+      "false_flag_rate": 0.49923312883435583,
+      "aurc": 0.002838473434726381,
+      "coverage_at_lowest_risk": [
+        0.00038226299694189603,
+        0.0
+      ],
+      "ece": 0.005367124719668799,
+      "per_pathology": {
+        "Atelectasis": {
+          "n": 2012,
+          "positives": 186,
+          "task_auroc": 0.7385642275848261,
+          "confident_correct": 36,
+          "confident_wrong": 1,
+          "flagged": 37
+        },
+        "Cardiomegaly": {
+          "n": 2012,
+          "positives": 147,
+          "task_auroc": 0.8628658970290529,
+          "confident_correct": 396,
+          "confident_wrong": 1,
+          "flagged": 362
+        },
+        "Effusion": {
+          "n": 2012,
+          "positives": 95,
+          "task_auroc": 0.8703346786371249,
+          "confident_correct": 146,
+          "confident_wrong": 2,
+          "flagged": 146
+        },
+        "Infiltration": {
+          "n": 2012,
+          "positives": 62,
+          "task_auroc": 0.7258974358974359,
+          "confident_correct": 0,
+          "confident_wrong": 0,
+          "flagged": 0
+        },
+        "Mass": {
+          "n": 2012,
+          "positives": 5,
+          "task_auroc": 0.8686596910812158,
+          "confident_correct": 1,
+          "confident_wrong": 0,
+          "flagged": 0
+        },
+        "Nodule": {
+          "n": 2012,
+          "positives": 31,
+          "task_auroc": 0.6428001498102945,
+          "confident_correct": 195,
+          "confident_wrong": 0,
+          "flagged": 153
+        },
+        "Pneumonia": {
+          "n": 2012,
+          "positives": 40,
+          "task_auroc": 0.6610167342799189,
+          "confident_correct": 77,
+          "confident_wrong": 0,
+          "flagged": 5
+        },
+        "Pneumothorax": {
+          "n": 2012,
+          "positives": 16,
+          "task_auroc": 0.7456788577154309,
+          "confident_correct": 417,
+          "confident_wrong": 0,
+          "flagged": 343
+        },
+        "Edema": {
+          "n": 2012,
+          "positives": 53,
+          "task_auroc": 0.8116482225240063,
+          "confident_correct": 409,
+          "confident_wrong": 2,
+          "flagged": 229
+        },
+        "Emphysema": {
+          "n": 2012,
+          "positives": 39,
+          "task_auroc": 0.6593109542932148,
+          "confident_correct": 2,
+          "confident_wrong": 0,
+          "flagged": 0
+        },
+        "Fibrosis": {
+          "n": 2012,
+          "positives": 8,
+          "task_auroc": 0.6160179640718563,
+          "confident_correct": 442,
+          "confident_wrong": 1,
+          "flagged": 28
+        },
+        "Pleural_Thickening": {
+          "n": 2012,
+          "positives": 8,
+          "task_auroc": 0.6993512974051896,
+          "confident_correct": 115,
+          "confident_wrong": 1,
+          "flagged": 5
+        },
+        "Hernia": {
+          "n": 2012,
+          "positives": 16,
+          "task_auroc": 0.6172031563126252,
+          "confident_correct": 372,
+          "confident_wrong": 0,
+          "flagged": 0
+        }
+      },
+      "error_type_counts": {
+        "confident_correct": 2608,
+        "tentative_correct": 13358,
+        "confident_fp": 1,
+        "tentative_fp": 10020,
+        "confident_fn": 7,
+        "tentative_fn": 162,
+        "unknown": 0
+      },
+      "risk_config": {
+        "decision_thresh": 0.5,
+        "conf_thresh": 0.6,
+        "unc_thresh": 0.15,
+        "mc_samples": 10,
+        "use_mc_dropout": true
+      }
+    },
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 13078,
+        "n_confident_wrong": 132,
+        "n_confident_correct": 12946,
+        "auroc_epistemic_std": 0.6946,
+        "auroc_mutual_info": 0.6202,
+        "auroc_energy14": 0.3595,
+        "auroc_mahalanobis": 0.7098
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 6539,
+        "n_confident_wrong": 35,
+        "n_confident_correct": 6504,
+        "auroc_epistemic_std": 0.6938,
+        "auroc_mutual_info": 0.6269,
+        "auroc_energy14": 0.4872,
+        "auroc_mahalanobis": 0.7389
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 3924,
+        "n_confident_wrong": 17,
+        "n_confident_correct": 3907,
+        "auroc_epistemic_std": 0.6995,
+        "auroc_mutual_info": 0.6232,
+        "auroc_energy14": 0.521,
+        "auroc_mahalanobis": 0.7919
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 2616,
+        "n_confident_wrong": 8,
+        "n_confident_correct": 2608,
+        "auroc_epistemic_std": 0.6314,
+        "auroc_mutual_info": 0.619,
+        "auroc_energy14": 0.4733,
+        "auroc_mahalanobis": 0.8354
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 1308,
+        "n_confident_wrong": 2,
+        "n_confident_correct": 1306,
+        "auroc_epistemic_std": 0.41,
+        "auroc_mutual_info": 0.4077,
+        "auroc_energy14": 0.7006,
+        "auroc_mahalanobis": 0.8913
+      }
+    ],
+    "selectivity_feature_subset": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 13078,
+        "n_confident_wrong": 132,
+        "n_confident_correct": 12946,
+        "auroc_epistemic_std": 0.6946,
+        "auroc_mutual_info": 0.6202,
+        "auroc_energy14": 0.3595,
+        "auroc_mahalanobis": 0.7098
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 6539,
+        "n_confident_wrong": 35,
+        "n_confident_correct": 6504,
+        "auroc_epistemic_std": 0.6938,
+        "auroc_mutual_info": 0.6269,
+        "auroc_energy14": 0.4872,
+        "auroc_mahalanobis": 0.7389
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 3924,
+        "n_confident_wrong": 17,
+        "n_confident_correct": 3907,
+        "auroc_epistemic_std": 0.6995,
+        "auroc_mutual_info": 0.6232,
+        "auroc_energy14": 0.521,
+        "auroc_mahalanobis": 0.7919
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 2616,
+        "n_confident_wrong": 8,
+        "n_confident_correct": 2608,
+        "auroc_epistemic_std": 0.6314,
+        "auroc_mutual_info": 0.619,
+        "auroc_energy14": 0.4733,
+        "auroc_mahalanobis": 0.8354
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 1308,
+        "n_confident_wrong": 2,
+        "n_confident_correct": 1306,
+        "auroc_epistemic_std": 0.41,
+        "auroc_mutual_info": 0.4077,
+        "auroc_energy14": 0.7006,
+        "auroc_mahalanobis": 0.8913
+      }
+    ],
+    "meta": {
+      "calibrator": "ts",
+      "use_beta": false,
+      "use_ts": true,
+      "alignment_set": "none",
+      "n_members": 3,
+      "n_pathologies": 14,
+      "member_keys": [
+        "xrv_nih",
+        "convnextv2",
+        "raddino"
+      ],
+      "beta_slots_fit": 0,
+      "beta_slots_identity": 42,
+      "temperature_T": 0.6301,
+      "thresholds": {
+        "Atelectasis": 0.0382,
+        "Cardiomegaly": 0.0304,
+        "Edema": 0.0159,
+        "Effusion": 0.048,
+        "Emphysema": 0.0011,
+        "Fibrosis": 0.0103,
+        "Hernia": 0.0009,
+        "Infiltration": 0.0834,
+        "Mass": 0.0069,
+        "Nodule": 0.0451,
+        "Pleural_Thickening": 0.0094,
+        "Pneumonia": 0.0073,
+        "Pneumothorax": 0.0329
+      },
+      "conf_cut": 0.8855,
+      "unc_cut": 0.0106,
+      "conf_pct": 10.0,
+      "unc_pct": 50.0
+    }
+  },
+  "openiD_pneu": {
+    "title": "openiD (in-distribution, Pneumonia only)",
+    "n_images": 2012,
+    "n_eval_rows": 2012,
+    "pneumonia_prevalence": 0.019880715705765408,
+    "report": {
+      "schema_version": 2,
+      "n_images": 2012,
+      "n_records": 2012,
+      "n_confident": 202,
+      "n_confident_wrong": 0,
+      "confident_error_auroc_std": null,
+      "confident_error_auroc_mi": null,
+      "confident_error_recall": null,
+      "false_flag_rate": null,
+      "aurc": null,
+      "coverage_at_lowest_risk": null,
+      "ece": 0.008344964689666006,
+      "per_pathology": {
+        "Pneumonia": {
+          "n": 2012,
+          "positives": 40,
+          "task_auroc": 0.6610167342799189,
+          "confident_correct": 202,
+          "confident_wrong": 0,
+          "flagged": 101
+        }
+      },
+      "error_type_counts": {
+        "confident_correct": 202,
+        "tentative_correct": 967,
+        "confident_fp": 0,
+        "tentative_fp": 831,
+        "confident_fn": 0,
+        "tentative_fn": 12,
+        "unknown": 0
+      },
+      "risk_config": {
+        "decision_thresh": 0.5,
+        "conf_thresh": 0.6,
+        "unc_thresh": 0.15,
+        "mc_samples": 10,
+        "use_mc_dropout": true
+      }
+    },
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 1006,
+        "n_confident_wrong": 7,
+        "n_confident_correct": 999,
+        "auroc_epistemic_std": 0.3955,
+        "auroc_mutual_info": 0.4067,
+        "auroc_energy14": 0.2119,
+        "auroc_mahalanobis": 0.853
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 503,
+        "n_confident_wrong": 2,
+        "n_confident_correct": 501,
+        "auroc_epistemic_std": 0.6168,
+        "auroc_mutual_info": 0.6058,
+        "auroc_energy14": 0.3014,
+        "auroc_mahalanobis": 0.8713
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 302,
+        "n_confident_wrong": 1,
+        "n_confident_correct": 301,
+        "auroc_epistemic_std": 0.7907,
+        "auroc_mutual_info": 0.8306,
+        "auroc_energy14": 0.113,
+        "auroc_mahalanobis": 0.7674
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 202,
+        "n_confident_wrong": 0,
+        "n_confident_correct": 202
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 101,
+        "n_confident_wrong": 0,
+        "n_confident_correct": 101
+      }
+    ],
+    "selectivity_feature_subset": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 1006,
+        "n_confident_wrong": 7,
+        "n_confident_correct": 999,
+        "auroc_epistemic_std": 0.3955,
+        "auroc_mutual_info": 0.4067,
+        "auroc_energy14": 0.2119,
+        "auroc_mahalanobis": 0.853
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 503,
+        "n_confident_wrong": 2,
+        "n_confident_correct": 501,
+        "auroc_epistemic_std": 0.6168,
+        "auroc_mutual_info": 0.6058,
+        "auroc_energy14": 0.3014,
+        "auroc_mahalanobis": 0.8713
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 302,
+        "n_confident_wrong": 1,
+        "n_confident_correct": 301,
+        "auroc_epistemic_std": 0.7907,
+        "auroc_mutual_info": 0.8306,
+        "auroc_energy14": 0.113,
+        "auroc_mahalanobis": 0.7674
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 202,
+        "n_confident_wrong": 0,
+        "n_confident_correct": 202
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 101,
+        "n_confident_wrong": 0,
+        "n_confident_correct": 101
+      }
+    ],
+    "meta": {
+      "calibrator": "ts",
+      "use_beta": false,
+      "use_ts": true,
+      "alignment_set": "none",
+      "n_members": 3,
+      "n_pathologies": 14,
+      "member_keys": [
+        "xrv_nih",
+        "convnextv2",
+        "raddino"
+      ],
+      "beta_slots_fit": 0,
+      "beta_slots_identity": 42,
+      "temperature_T": 0.6301,
+      "thresholds": {
+        "Pneumonia": 0.0073
+      },
+      "conf_cut": 0.8263,
+      "unc_cut": 0.0091,
+      "conf_pct": 10.0,
+      "unc_pct": 50.0
+    }
+  },
+  "kermany_pneu": {
+    "title": "kermany (OOD under shift, Pneumonia only)",
+    "n_images": 5856,
+    "n_eval_rows": 5856,
+    "pneumonia_prevalence": 0.7296789617486339,
+    "report": {
+      "schema_version": 2,
+      "n_images": 5856,
+      "n_records": 5856,
+      "n_confident": 586,
+      "n_confident_wrong": 244,
+      "confident_error_auroc_std": 0.5152310420860895,
+      "confident_error_auroc_mi": 0.4184282427379925,
+      "confident_error_recall": 0.5040983606557377,
+      "false_flag_rate": 0.49707602339181284,
+      "aurc": 0.4192850725085484,
+      "coverage_at_lowest_risk": [
+        0.0017064846416382253,
+        0.0
+      ],
+      "ece": 0.7194703574109489,
+      "per_pathology": {
+        "Pneumonia": {
+          "n": 5856,
+          "positives": 4273,
+          "task_auroc": 0.6853678336065134,
+          "confident_correct": 342,
+          "confident_wrong": 244,
+          "flagged": 293
+        }
+      },
+      "error_type_counts": {
+        "confident_correct": 342,
+        "tentative_correct": 3103,
+        "confident_fp": 0,
+        "tentative_fp": 450,
+        "confident_fn": 244,
+        "tentative_fn": 1717,
+        "unknown": 0
+      },
+      "risk_config": {
+        "decision_thresh": 0.5,
+        "conf_thresh": 0.6,
+        "unc_thresh": 0.15,
+        "mc_samples": 10,
+        "use_mc_dropout": true
+      }
+    },
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 2928,
+        "n_confident_wrong": 1823,
+        "n_confident_correct": 1105,
+        "auroc_epistemic_std": 0.5173,
+        "auroc_mutual_info": 0.4123,
+        "auroc_energy14": 0.3257,
+        "auroc_mahalanobis": 0.7793
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 1464,
+        "n_confident_wrong": 800,
+        "n_confident_correct": 664,
+        "auroc_epistemic_std": 0.5196,
+        "auroc_mutual_info": 0.41,
+        "auroc_energy14": 0.296,
+        "auroc_mahalanobis": 0.7934
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 879,
+        "n_confident_wrong": 420,
+        "n_confident_correct": 459,
+        "auroc_epistemic_std": 0.5359,
+        "auroc_mutual_info": 0.4349,
+        "auroc_energy14": 0.2785,
+        "auroc_mahalanobis": 0.8159
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 586,
+        "n_confident_wrong": 244,
+        "n_confident_correct": 342,
+        "auroc_epistemic_std": 0.5152,
+        "auroc_mutual_info": 0.4184,
+        "auroc_energy14": 0.2527,
+        "auroc_mahalanobis": 0.818
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 293,
+        "n_confident_wrong": 93,
+        "n_confident_correct": 200,
+        "auroc_epistemic_std": 0.4846,
+        "auroc_mutual_info": 0.3865,
+        "auroc_energy14": 0.2316,
+        "auroc_mahalanobis": 0.8512
+      }
+    ],
+    "selectivity_feature_subset": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 2928,
+        "n_confident_wrong": 1823,
+        "n_confident_correct": 1105,
+        "auroc_epistemic_std": 0.5173,
+        "auroc_mutual_info": 0.4123,
+        "auroc_energy14": 0.3257,
+        "auroc_mahalanobis": 0.7793
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 1464,
+        "n_confident_wrong": 800,
+        "n_confident_correct": 664,
+        "auroc_epistemic_std": 0.5196,
+        "auroc_mutual_info": 0.41,
+        "auroc_energy14": 0.296,
+        "auroc_mahalanobis": 0.7934
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 879,
+        "n_confident_wrong": 420,
+        "n_confident_correct": 459,
+        "auroc_epistemic_std": 0.5359,
+        "auroc_mutual_info": 0.4349,
+        "auroc_energy14": 0.2785,
+        "auroc_mahalanobis": 0.8159
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 586,
+        "n_confident_wrong": 244,
+        "n_confident_correct": 342,
+        "auroc_epistemic_std": 0.5152,
+        "auroc_mutual_info": 0.4184,
+        "auroc_energy14": 0.2527,
+        "auroc_mahalanobis": 0.818
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 293,
+        "n_confident_wrong": 93,
+        "n_confident_correct": 200,
+        "auroc_epistemic_std": 0.4846,
+        "auroc_mutual_info": 0.3865,
+        "auroc_energy14": 0.2316,
+        "auroc_mahalanobis": 0.8512
+      }
+    ],
+    "meta": {
+      "calibrator": "ts",
+      "use_beta": false,
+      "use_ts": true,
+      "alignment_set": "none",
+      "n_members": 3,
+      "n_pathologies": 14,
+      "member_keys": [
+        "xrv_nih",
+        "convnextv2",
+        "raddino"
+      ],
+      "beta_slots_fit": 0,
+      "beta_slots_identity": 42,
+      "temperature_T": 0.6301,
+      "thresholds": {
+        "Pneumonia": 0.0073
+      },
+      "conf_cut": 0.6806,
+      "unc_cut": 0.0133,
+      "conf_pct": 10.0,
+      "unc_pct": 50.0
+    }
+  },
+  "covid_pneu": {
+    "title": "covid (OOD under shift, Pneumonia only)",
+    "n_images": 6432,
+    "n_eval_rows": 6432,
+    "pneumonia_prevalence": 0.753886815920398,
+    "report": {
+      "schema_version": 2,
+      "n_images": 6432,
+      "n_records": 6432,
+      "n_confident": 644,
+      "n_confident_wrong": 313,
+      "confident_error_auroc_std": 0.47769852224356435,
+      "confident_error_auroc_mi": 0.4023918226306188,
+      "confident_error_recall": 0.476038338658147,
+      "false_flag_rate": 0.5226586102719033,
+      "aurc": 0.5330860402790258,
+      "coverage_at_lowest_risk": [
+        0.6972049689440993,
+        0.47438752783964366
+      ],
+      "ece": 0.7429726582842019,
+      "per_pathology": {
+        "Pneumonia": {
+          "n": 6432,
+          "positives": 4849,
+          "task_auroc": 0.6880036091869598,
+          "confident_correct": 331,
+          "confident_wrong": 313,
+          "flagged": 322
+        }
+      },
+      "error_type_counts": {
+        "confident_correct": 331,
+        "tentative_correct": 3470,
+        "confident_fp": 0,
+        "tentative_fp": 443,
+        "confident_fn": 313,
+        "tentative_fn": 1875,
+        "unknown": 0
+      },
+      "risk_config": {
+        "decision_thresh": 0.5,
+        "conf_thresh": 0.6,
+        "unc_thresh": 0.15,
+        "mc_samples": 10,
+        "use_mc_dropout": true
+      }
+    },
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 3216,
+        "n_confident_wrong": 2050,
+        "n_confident_correct": 1166,
+        "auroc_epistemic_std": 0.4751,
+        "auroc_mutual_info": 0.3803,
+        "auroc_energy14": 0.3688,
+        "auroc_mahalanobis": 0.7025
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 1608,
+        "n_confident_wrong": 948,
+        "n_confident_correct": 660,
+        "auroc_epistemic_std": 0.4978,
+        "auroc_mutual_info": 0.3976,
+        "auroc_energy14": 0.3338,
+        "auroc_mahalanobis": 0.7055
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 965,
+        "n_confident_wrong": 510,
+        "n_confident_correct": 455,
+        "auroc_epistemic_std": 0.4969,
+        "auroc_mutual_info": 0.4136,
+        "auroc_energy14": 0.3459,
+        "auroc_mahalanobis": 0.6842
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 644,
+        "n_confident_wrong": 313,
+        "n_confident_correct": 331,
+        "auroc_epistemic_std": 0.4777,
+        "auroc_mutual_info": 0.4024,
+        "auroc_energy14": 0.3437,
+        "auroc_mahalanobis": 0.6491
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 322,
+        "n_confident_wrong": 138,
+        "n_confident_correct": 184,
+        "auroc_epistemic_std": 0.424,
+        "auroc_mutual_info": 0.3697,
+        "auroc_energy14": 0.366,
+        "auroc_mahalanobis": 0.6005
+      }
+    ],
+    "selectivity_feature_subset": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 3216,
+        "n_confident_wrong": 2050,
+        "n_confident_correct": 1166,
+        "auroc_epistemic_std": 0.4751,
+        "auroc_mutual_info": 0.3803,
+        "auroc_energy14": 0.3688,
+        "auroc_mahalanobis": 0.7025
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 1608,
+        "n_confident_wrong": 948,
+        "n_confident_correct": 660,
+        "auroc_epistemic_std": 0.4978,
+        "auroc_mutual_info": 0.3976,
+        "auroc_energy14": 0.3338,
+        "auroc_mahalanobis": 0.7055
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 965,
+        "n_confident_wrong": 510,
+        "n_confident_correct": 455,
+        "auroc_epistemic_std": 0.4969,
+        "auroc_mutual_info": 0.4136,
+        "auroc_energy14": 0.3459,
+        "auroc_mahalanobis": 0.6842
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 644,
+        "n_confident_wrong": 313,
+        "n_confident_correct": 331,
+        "auroc_epistemic_std": 0.4777,
+        "auroc_mutual_info": 0.4024,
+        "auroc_energy14": 0.3437,
+        "auroc_mahalanobis": 0.6491
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 322,
+        "n_confident_wrong": 138,
+        "n_confident_correct": 184,
+        "auroc_epistemic_std": 0.424,
+        "auroc_mutual_info": 0.3697,
+        "auroc_energy14": 0.366,
+        "auroc_mahalanobis": 0.6005
+      }
+    ],
+    "meta": {
+      "calibrator": "ts",
+      "use_beta": false,
+      "use_ts": true,
+      "alignment_set": "none",
+      "n_members": 3,
+      "n_pathologies": 14,
+      "member_keys": [
+        "xrv_nih",
+        "convnextv2",
+        "raddino"
+      ],
+      "beta_slots_fit": 0,
+      "beta_slots_identity": 42,
+      "temperature_T": 0.6301,
+      "thresholds": {
+        "Pneumonia": 0.0073
+      },
+      "conf_cut": 0.6834,
+      "unc_cut": 0.013,
+      "conf_pct": 10.0,
+      "unc_pct": 50.0
+    }
+  }
+}

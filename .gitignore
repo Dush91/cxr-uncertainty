@@ -1,0 +1,66 @@
+# ---------------------------------------------------------------------------
+# Patient data and anything derived from it. See PUBLISHING.md.
+# These exclusions are a data-use-agreement requirement, not a preference.
+# ---------------------------------------------------------------------------
+data/
+checkpoints/
+_extern/
+chexpert-labeler/
+
+# runs/ is an ALLOWLIST, not a denylist. Everything under it is patient-derived
+# or huge by default; only aggregate result summaries and plots are published.
+# A denylist was tried first and missed a renamed parquet backup carrying
+# 129,113 rows keyed by DICOM UIDs -- hence the inversion.
+runs/**
+!runs/**/
+!runs/**/*.json
+!runs/**/*.md
+!runs/**/*.png
+
+# ...and re-exclude the aggregate formats that still carry per-image identity
+runs/**/sidecar*
+runs/**/store.npz
+runs/**/per_record.csv
+runs/rex_labeling*/
+runs/**/eval_arrays/rex_adapted
+
+# Agent 3 per-case records are keyed by ReXGradient DICOM instance UIDs and
+# carry per-image measured quantities. The publishable aggregate is
+# runs/app_rex_adapted/agent3_gate_summary.json (scripts/redact_agent3_batch.py).
+runs/app_rex_adapted/agent3_batch/
+runs/app_rex_adapted/agent3_batch_llm/
+
+# ---------------------------------------------------------------------------
+# Environment and local clutter
+# ---------------------------------------------------------------------------
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.dmg
+.ollama/
+.torchxrayvision/
+claude.json
+
+# Build artifacts
+dissertation/Dissertation.docx
+
+# ---------------------------------------------------------------------------
+# Private working material -- not part of the published artifact
+# ---------------------------------------------------------------------------
+# session transcripts, plans and memory (54 MB)
+.claude/
+.cursor/
+# agent instructions for this working copy
+CLAUDE.md
+
+# University-issued documents. These belong to the School / the supervisor
+# and are not ours to redistribute; the dissertation itself is the artifact.
+MScDissertationTemplate2026.docx
+Guidance for Dissertation Content Write.docx
+Project 7.pdf
+
+# Run logs: large, and they carry rented-host filesystem paths
+runs/**/*.log
+runs/*.log

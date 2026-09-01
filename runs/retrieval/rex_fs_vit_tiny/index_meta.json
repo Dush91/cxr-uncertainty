@@ -1,0 +1,16 @@
+{
+  "source": "rex_fs_vit_tiny",
+  "embed": "vit_tiny",
+  "feature_key": "rad_feats",
+  "dim": 192,
+  "n_reference": 8064,
+  "M": 32,
+  "ef_construction": 200,
+  "space": "cosine",
+  "recall_at_k": 1.0,
+  "k": 10,
+  "n_recall_queries": 200,
+  "reference_split": "cal",
+  "query_split": "eval",
+  "label_free": "store holds ids+feats only; sidecar.parquet separate"
+}

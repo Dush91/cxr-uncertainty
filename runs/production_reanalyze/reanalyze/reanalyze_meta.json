@@ -1,0 +1,83 @@
+{
+  "calibration": {
+    "thresholds": {
+      "Atelectasis": 0.0542,
+      "Cardiomegaly": 0.0139,
+      "Edema": 0.0195,
+      "Effusion": 0.0938,
+      "Emphysema": 0.0073,
+      "Fibrosis": 0.005,
+      "Hernia": 0.0008,
+      "Infiltration": 0.0898,
+      "Mass": 0.5,
+      "Nodule": 0.0085,
+      "Pleural_Thickening": 0.032,
+      "Pneumonia": 0.0055,
+      "Pneumothorax": 0.0107
+    },
+    "conf_cut": 0.9436,
+    "unc_cut": 0.0155,
+    "conf_pct": 10.0,
+    "unc_pct": 50.0,
+    "unc_column": "epistemic_std",
+    "uq_score": "epistemic_std",
+    "risk_flag_override": false,
+    "conformal_active": false,
+    "calibrator": "youden"
+  },
+  "confident_error_auroc_vs_selectivity": [
+    {
+      "conf_top_pct": 50,
+      "n_confident": 3275,
+      "n_confident_wrong": 28,
+      "auroc_epistemic_std": 0.7487,
+      "auroc_mutual_info": 0.6629,
+      "auroc_confidence": 0.7738,
+      "auroc_mahalanobis": 0.5492
+    },
+    {
+      "conf_top_pct": 25,
+      "n_confident": 1635,
+      "n_confident_wrong": 4,
+      "auroc_epistemic_std": 0.8005,
+      "auroc_mutual_info": 0.6801,
+      "auroc_confidence": 0.6622,
+      "auroc_mahalanobis": 0.3913
+    },
+    {
+      "conf_top_pct": 15,
+      "n_confident": 982,
+      "n_confident_wrong": 1,
+      "auroc_epistemic_std": 0.8981,
+      "auroc_mutual_info": 0.682,
+      "auroc_confidence": 0.5729,
+      "auroc_mahalanobis": 0.3186
+    },
+    {
+      "conf_top_pct": 10,
+      "n_confident": 654,
+      "n_confident_wrong": 1,
+      "auroc_epistemic_std": 0.9188,
+      "auroc_mutual_info": 0.706,
+      "auroc_confidence": 0.8606,
+      "auroc_mahalanobis": 0.3139
+    }
+  ],
+  "statistical_tests": {
+    "confident_error_auroc_std_ci95": [
+      0.8972,
+      0.9387
+    ],
+    "delong_mahalanobis_vs_std": {
+      "auc_mahalanobis": 0.3139,
+      "auc_epistemic_std": 0.9188,
+      "z": null,
+      "p": null
+    },
+    "mcnemar_epistemic_vs_mahalanobis_flag": {
+      "chi2": 0.003,
+      "p": 0.9562,
+      "n_confident": 654
+    }
+  }
+}

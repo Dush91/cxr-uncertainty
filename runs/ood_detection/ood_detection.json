@@ -1,0 +1,43 @@
+{
+  "id_site": "openiD",
+  "ood_sites": [
+    "kermany",
+    "covid"
+  ],
+  "scores": [
+    "mahalanobis",
+    "energy",
+    "knn"
+  ],
+  "knn_k": 5,
+  "results": {
+    "kermany": {
+      "mahalanobis": {
+        "auroc": 0.9895,
+        "fpr_at_95tpr": 0.0333
+      },
+      "energy": {
+        "auroc": 0.4694,
+        "fpr_at_95tpr": 0.9051
+      },
+      "knn": {
+        "auroc": 0.9904,
+        "fpr_at_95tpr": 0.0323
+      }
+    },
+    "covid": {
+      "mahalanobis": {
+        "auroc": 0.98,
+        "fpr_at_95tpr": 0.0954
+      },
+      "energy": {
+        "auroc": 0.4757,
+        "fpr_at_95tpr": 0.915
+      },
+      "knn": {
+        "auroc": 0.9834,
+        "fpr_at_95tpr": 0.08
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "kermany": {
+    "n_images": 5856,
+    "n_pneumonia_eval": 5856,
+    "pneumonia_prevalence": 0.7296789617486339,
+    "report": {
+      "schema_version": 2,
+      "n_images": 5856,
+      "n_records": 5856,
+      "n_confident": 586,
+      "n_confident_wrong": 244,
+      "confident_error_auroc_std": 0.5152310420860895,
+      "confident_error_auroc_mi": 0.4184282427379925,
+      "confident_error_recall": 0.5040983606557377,
+      "false_flag_rate": 0.49707602339181284,
+      "aurc": 0.4192850725085484,
+      "coverage_at_lowest_risk": [
+        0.0017064846416382253,
+        0.0
+      ],
+      "ece": 0.7194703574109489,
+      "per_pathology": {
+        "Pneumonia": {
+          "n": 5856,
+          "positives": 4273,
+          "task_auroc": 0.6853678336065134,
+          "confident_correct": 342,
+          "confident_wrong": 244,
+          "flagged": 293
+        }
+      },
+      "error_type_counts": {
+        "confident_correct": 342,
+        "tentative_correct": 3103,
+        "confident_fp": 0,
+        "tentative_fp": 450,
+        "confident_fn": 244,
+        "tentative_fn": 1717,
+        "unknown": 0
+      },
+      "risk_config": {
+        "decision_thresh": 0.5,
+        "conf_thresh": 0.6,
+        "unc_thresh": 0.15,
+        "mc_samples": 10,
+        "use_mc_dropout": true
+      }
+    },
+    "selectivity": [
+      {
+        "conf_top_pct": 50,
+        "n_confident": 2928,
+        "n_confident_wrong": 1823,
+        "auroc_epistemic_std": 0.5173,
+        "auroc_mutual_info": 0.4123
+      },
+      {
+        "conf_top_pct": 25,
+        "n_confident": 1464,
+        "n_confident_wrong": 800,
+        "auroc_epistemic_std": 0.5196,
+        "auroc_mutual_info": 0.41
+      },
+      {
+        "conf_top_pct": 15,
+        "n_confident": 879,
+        "n_confident_wrong": 420,
+        "auroc_epistemic_std": 0.5359,
+        "auroc_mutual_info": 0.4349
+      },
+      {
+        "conf_top_pct": 10,
+        "n_confident": 586,
+        "n_confident_wrong": 244,
+        "auroc_epistemic_std": 0.5152,
+        "auroc_mutual_info": 0.4184
+      },
+      {
+        "conf_top_pct": 5,
+        "n_confident": 293,
+        "n_confident_wrong": 93,
+        "auroc_epistemic_std": 0.4846,
+        "auroc_mutual_info": 0.3865
+      }
+    ],
+    "meta": {
+      "calibrator": "ts",
+      "use_beta": false,
+      "use_ts": true,
+      "alignment_set": "none",
+      "n_members": 3,
+      "n_pathologies": 14,
+      "member_keys": [
+        "xrv_nih",
+        "convnextv2",
+        "raddino"
+      ],
+      "beta_slots_fit": 0,
+      "beta_slots_identity": 42,
+      "temperature_T": 0.6301
+    },
+    "monotonic": false,
+    "temperature_T": 0.6301
+  }
+}

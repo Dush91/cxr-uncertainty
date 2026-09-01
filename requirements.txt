@@ -1,0 +1,22 @@
+# CXR uncertainty / risk-flagging system
+# Tested with Python 3.12 on CPU.
+torch>=2.4
+torchvision>=0.19
+torchxrayvision>=1.5
+timm>=1.0,<1.0.29     # 1.0.29 rejects bare "timm/<repo-id>" model names
+numpy>=2
+pandas>=2
+scikit-learn>=1.5
+scipy>=1.13
+matplotlib>=3.9
+scikit-image>=0.24
+opencv-python-headless>=4.10
+pydicom>=2.4
+tqdm>=4.66
+
+# App / retrieval stack (used by scripts/demo_app_rex.py + scripts/query_retrieval.py)
+transformers>=4.51    # RAD-DINO member
+pyarrow>=14           # sidecar.parquet / rex_manifest.parquet
+chroma-hnswlib==0.7.3 # writes/reads runs/retrieval/* index.bin (0.8.0 cannot load it)
+gradio>=5,<6          # 6.x forces huggingface-hub>=1.16, conflicts with transformers <1.0 pin
+huggingface_hub<1.0   # keep transformers' hub pin satisfied

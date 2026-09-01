@@ -1,0 +1,270 @@
+{
+  "title": "openiD (in-distribution, Pneumonia only)",
+  "n_images": 2012,
+  "pneumonia_prevalence": 0.019880715705765408,
+  "report": {
+    "schema_version": 2,
+    "n_images": 2012,
+    "n_records": 2012,
+    "n_confident": 202,
+    "n_confident_wrong": 0,
+    "confident_error_auroc_std": null,
+    "confident_error_auroc_mi": null,
+    "confident_error_auroc_mahalanobis": null,
+    "confident_error_recall": null,
+    "false_flag_rate": null,
+    "aurc": null,
+    "coverage_at_lowest_risk": null,
+    "ece": 0.008344964689666006,
+    "per_pathology": {
+      "Pneumonia": {
+        "n": 2012,
+        "positives": 40,
+        "task_auroc": 0.6610167342799189,
+        "confident_correct": 202,
+        "confident_wrong": 0,
+        "flagged": 173
+      }
+    },
+    "error_type_counts": {
+      "confident_correct": 202,
+      "tentative_correct": 967,
+      "confident_fp": 0,
+      "tentative_fp": 831,
+      "confident_fn": 0,
+      "tentative_fn": 12,
+      "unknown": 0
+    },
+    "risk_config": {
+      "decision_thresh": 0.5,
+      "conf_thresh": 0.6,
+      "unc_thresh": 0.15,
+      "mc_samples": 10,
+      "use_mc_dropout": true
+    },
+    "conformal_active": true,
+    "conformal_coverage": 0.8946322067594433,
+    "conformal_size": 0.9140159045725647,
+    "per_pathology_conformal": {
+      "Pneumonia": {
+        "n": 2012,
+        "coverage": 0.8946322067594433,
+        "avg_set_size": 0.9140159045725647,
+        "refer_rate": 0.08598409542743539
+      }
+    },
+    "brier": 0.019740810142446233
+  },
+  "selectivity": [
+    {
+      "conf_top_pct": 50,
+      "n_confident": 1006,
+      "n_confident_wrong": 7,
+      "auroc_epistemic_std": 0.3955,
+      "auroc_mutual_info": 0.4067,
+      "auroc_mahalanobis": 0.853
+    },
+    {
+      "conf_top_pct": 25,
+      "n_confident": 503,
+      "n_confident_wrong": 2,
+      "auroc_epistemic_std": 0.6168,
+      "auroc_mutual_info": 0.6058,
+      "auroc_mahalanobis": 0.8713
+    },
+    {
+      "conf_top_pct": 15,
+      "n_confident": 302,
+      "n_confident_wrong": 1,
+      "auroc_epistemic_std": 0.7907,
+      "auroc_mutual_info": 0.8306,
+      "auroc_mahalanobis": 0.7674
+    }
+  ],
+  "flags": {
+    "epistemic_std": [
+      null,
+      0.5
+    ],
+    "mahalanobis": [
+      null,
+      0.5
+    ],
+    "conformal_refer": [
+      null,
+      0.0
+    ]
+  },
+  "meta": {
+    "calibrator": "ts",
+    "use_beta": false,
+    "use_ts": true,
+    "alignment_set": "none",
+    "n_members": 3,
+    "n_pathologies": 14,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino"
+    ],
+    "beta_slots_fit": 0,
+    "beta_slots_identity": 42,
+    "temperature_T": 0.6301,
+    "uq_score": "epistemic_std",
+    "alpha": 0.1,
+    "conformal": {
+      "alpha": 0.1,
+      "min_n": 300,
+      "rare_label_strategy": "none",
+      "rare_group": [],
+      "pooled_tau_rare": null,
+      "excluded_no_cal": [
+        "Consolidation"
+      ],
+      "n_per_pathology": {
+        "Atelectasis": 2002,
+        "Cardiomegaly": 2002,
+        "Edema": 2002,
+        "Effusion": 2002,
+        "Emphysema": 2002,
+        "Fibrosis": 2002,
+        "Hernia": 2002,
+        "Infiltration": 2002,
+        "Mass": 2002,
+        "Nodule": 2002,
+        "Pleural_Thickening": 2002,
+        "Pneumonia": 2002,
+        "Pneumothorax": 2002
+      },
+      "n_thresholds": 13
+    },
+    "coverage": {
+      "per_pathology": {
+        "Atelectasis": {
+          "n": 2012,
+          "coverage": 0.8951292246520874,
+          "avg_set_size": 0.9756461232604374,
+          "refer_rate": 0.024353876739562623,
+          "tau_p": 0.198051
+        },
+        "Cardiomegaly": {
+          "n": 2012,
+          "coverage": 0.8936381709741551,
+          "avg_set_size": 0.9319085487077535,
+          "refer_rate": 0.06809145129224652,
+          "tau_p": 0.080667
+        },
+        "Edema": {
+          "n": 2012,
+          "coverage": 0.8836978131212724,
+          "avg_set_size": 0.8991053677932406,
+          "refer_rate": 0.10089463220675944,
+          "tau_p": 0.042966
+        },
+        "Effusion": {
+          "n": 2012,
+          "coverage": 0.889662027833002,
+          "avg_set_size": 0.9090457256461233,
+          "refer_rate": 0.09095427435387674,
+          "tau_p": 0.116926
+        },
+        "Emphysema": {
+          "n": 2012,
+          "coverage": 0.9130218687872763,
+          "avg_set_size": 0.9294234592445328,
+          "refer_rate": 0.0705765407554672,
+          "tau_p": 0.11092
+        },
+        "Fibrosis": {
+          "n": 2012,
+          "coverage": 0.8881709741550696,
+          "avg_set_size": 0.8911530815109344,
+          "refer_rate": 0.10884691848906561,
+          "tau_p": 0.049218
+        },
+        "Hernia": {
+          "n": 2012,
+          "coverage": 0.9000994035785288,
+          "avg_set_size": 0.9075546719681908,
+          "refer_rate": 0.09244532803180915,
+          "tau_p": 0.030181
+        },
+        "Infiltration": {
+          "n": 2012,
+          "coverage": 0.8981113320079522,
+          "avg_set_size": 0.9204771371769384,
+          "refer_rate": 0.07952286282306163,
+          "tau_p": 0.175256
+        },
+        "Mass": {
+          "n": 2012,
+          "coverage": 0.8851888667992047,
+          "avg_set_size": 0.8866799204771372,
+          "refer_rate": 0.11332007952286283,
+          "tau_p": 0.067805
+        },
+        "Nodule": {
+          "n": 2012,
+          "coverage": 0.8941351888667992,
+          "avg_set_size": 0.9075546719681908,
+          "refer_rate": 0.09244532803180915,
+          "tau_p": 0.068117
+        },
+        "Pleural_Thickening": {
+          "n": 2012,
+          "coverage": 0.904572564612326,
+          "avg_set_size": 0.9065606361829026,
+          "refer_rate": 0.09343936381709742,
+          "tau_p": 0.029055
+        },
+        "Pneumonia": {
+          "n": 2012,
+          "coverage": 0.8946322067594433,
+          "avg_set_size": 0.9140159045725647,
+          "refer_rate": 0.08598409542743539,
+          "tau_p": 0.038612
+        },
+        "Pneumothorax": {
+          "n": 2012,
+          "coverage": 0.9075546719681908,
+          "avg_set_size": 0.9120278330019881,
+          "refer_rate": 0.08797216699801193,
+          "tau_p": 0.032974
+        }
+      },
+      "overall": {
+        "n": 26156,
+        "coverage": 0.8959703318550237,
+        "avg_set_size": 0.9147040831931488,
+        "refer_rate": 0.0852959168068512
+      }
+    },
+    "tau_p": {
+      "Atelectasis": 0.198051,
+      "Cardiomegaly": 0.080667,
+      "Edema": 0.042966,
+      "Effusion": 0.116926,
+      "Emphysema": 0.11092,
+      "Fibrosis": 0.049218,
+      "Hernia": 0.030181,
+      "Infiltration": 0.175256,
+      "Mass": 0.067805,
+      "Nodule": 0.068117,
+      "Pleural_Thickening": 0.029055,
+      "Pneumonia": 0.038612,
+      "Pneumothorax": 0.032974
+    },
+    "rare_group": [],
+    "pooled_tau": null,
+    "thresholds": {
+      "Pneumonia": 0.0073
+    },
+    "conf_cut": 0.8263,
+    "unc_cut": null,
+    "conf_pct": 10.0,
+    "unc_pct": 50.0,
+    "unc_column": "epistemic_std",
+    "risk_flag_override": true,
+    "conformal_active": true
+  }
+}

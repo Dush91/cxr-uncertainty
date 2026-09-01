@@ -1,0 +1,175 @@
+{
+  "temperature_T": 0.6301,
+  "alpha": 0.1,
+  "inclusion_list": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Edema",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Pleural_Thickening",
+    "Pneumothorax"
+  ],
+  "prevalence": {
+    "Atelectasis": {
+      "openi_prev": 0.08891108891108891,
+      "roleB_prev": 0.18681318681318682
+    },
+    "Cardiomegaly": {
+      "openi_prev": 0.059940059940059943,
+      "roleB_prev": 0.08691308691308691
+    },
+    "Effusion": {
+      "openi_prev": 0.04195804195804196,
+      "roleB_prev": 0.2772227772227772
+    },
+    "Infiltration": {
+      "openi_prev": 0.026973026973026972,
+      "roleB_prev": 0.3256743256743257
+    },
+    "Mass": {
+      "openi_prev": 0.001998001998001998,
+      "roleB_prev": 0.056943056943056944
+    },
+    "Nodule": {
+      "openi_prev": 0.01848151848151848,
+      "roleB_prev": 0.05189620758483034
+    },
+    "Pneumonia": {
+      "openi_prev": 0.01898101898101898,
+      "roleB_prev": 0.06493506493506493
+    },
+    "Pneumothorax": {
+      "openi_prev": 0.004995004995004995,
+      "roleB_prev": 0.07342657342657342
+    },
+    "Consolidation": {
+      "openi_prev": 0.0,
+      "roleB_prev": 0.0964035964035964
+    },
+    "Edema": {
+      "openi_prev": 0.016983016983016984,
+      "roleB_prev": 0.14435564435564435
+    },
+    "Emphysema": {
+      "openi_prev": 0.027472527472527472,
+      "roleB_prev": 0.016966067864271458
+    },
+    "Fibrosis": {
+      "openi_prev": 0.0034965034965034965,
+      "roleB_prev": 0.016966067864271458
+    },
+    "Pleural_Thickening": {
+      "openi_prev": 0.00999000999000999,
+      "roleB_prev": 0.024975024975024976
+    },
+    "Hernia": {
+      "openi_prev": 0.016983016983016984,
+      "roleB_prev": 0.005988023952095809
+    }
+  },
+  "youden_openiC": {
+    "Atelectasis": 0.038224,
+    "Cardiomegaly": 0.03036,
+    "Effusion": 0.048047,
+    "Infiltration": 0.08338,
+    "Mass": 0.006872,
+    "Nodule": 0.045117,
+    "Pneumonia": 0.007286,
+    "Pneumothorax": 0.032933,
+    "Consolidation": null,
+    "Edema": 0.015935,
+    "Emphysema": 0.001105,
+    "Fibrosis": 0.010351,
+    "Pleural_Thickening": 0.009447,
+    "Hernia": 0.000947
+  },
+  "youden_weighted": {
+    "Atelectasis": 0.038224,
+    "Cardiomegaly": 0.025772,
+    "Effusion": 0.093255,
+    "Infiltration": 0.08338,
+    "Mass": 0.006872,
+    "Nodule": 0.045117,
+    "Pneumonia": 0.007286,
+    "Pneumothorax": 0.032933,
+    "Consolidation": null,
+    "Edema": 0.015935,
+    "Emphysema": 0.001105,
+    "Fibrosis": 0.010351,
+    "Pleural_Thickening": 0.007165,
+    "Hernia": 0.000947
+  },
+  "youden_pooled": {
+    "Atelectasis": 0.055362,
+    "Cardiomegaly": 0.029306,
+    "Effusion": 0.128046,
+    "Infiltration": 0.177688,
+    "Mass": 0.012522,
+    "Nodule": 0.045117,
+    "Pneumonia": 0.007286,
+    "Pneumothorax": 0.029266,
+    "Consolidation": null,
+    "Edema": 0.029429,
+    "Emphysema": 0.001105,
+    "Fibrosis": 0.010351,
+    "Pleural_Thickening": 0.006503,
+    "Hernia": 0.000947
+  },
+  "youden_selected": {
+    "Atelectasis": 0.038224,
+    "Cardiomegaly": 0.03036,
+    "Effusion": 0.048047,
+    "Infiltration": 0.08338,
+    "Mass": 0.012522,
+    "Nodule": 0.045117,
+    "Pneumonia": 0.007286,
+    "Pneumothorax": 0.032933,
+    "Consolidation": null,
+    "Edema": 0.015935,
+    "Emphysema": 0.001105,
+    "Fibrosis": 0.010351,
+    "Pleural_Thickening": 0.009447,
+    "Hernia": 0.000947
+  },
+  "selected_source": {
+    "Atelectasis": "openiC",
+    "Cardiomegaly": "openiC",
+    "Effusion": "openiC",
+    "Infiltration": "openiC",
+    "Mass": "pooled",
+    "Nodule": "openiC",
+    "Pneumonia": "openiC",
+    "Pneumothorax": "openiC",
+    "Consolidation": "openiC",
+    "Edema": "openiC",
+    "Emphysema": "openiC",
+    "Fibrosis": "openiC",
+    "Pleural_Thickening": "openiC",
+    "Hernia": "openiC"
+  },
+  "selected_pooled": [
+    "Mass"
+  ],
+  "selected_weighted": [],
+  "selected_openiC": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Hernia"
+  ],
+  "guard": {
+    "tpr_guard": 0.02,
+    "fp_min_gain": 0.005
+  }
+}

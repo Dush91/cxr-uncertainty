@@ -1,0 +1,29 @@
+{
+  "min_pos": 20,
+  "min_neg": 20,
+  "conf_thresh": 0.5,
+  "ffr": 0.1,
+  "split_seed": 0,
+  "score": "decision_distance",
+  "enabled_pathologies": [
+    "Pneumonia",
+    "Pneumothorax",
+    "Edema"
+  ],
+  "all_pathologies": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Hernia"
+  ]
+}

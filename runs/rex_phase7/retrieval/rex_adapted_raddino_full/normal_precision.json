@@ -1,0 +1,20 @@
+{
+  "k": 8,
+  "n_queries": 2000,
+  "queries_pred_normal_frac": 0.651,
+  "old@cal-lib": {
+    "mean": 0.7395625,
+    "std": 0.2443910720418199,
+    "n": 2000
+  },
+  "old@full-lib": {
+    "mean": 0.674,
+    "std": 0.28301766729305083,
+    "n": 2000
+  },
+  "new-normal-mode": {
+    "mean": 1.0,
+    "std": 0.0,
+    "n": 2000
+  }
+}

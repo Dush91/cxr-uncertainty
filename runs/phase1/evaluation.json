@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "n_images": 2012,
+  "n_records": 26156,
+  "n_confident": 2616,
+  "n_confident_wrong": 18,
+  "confident_error_auroc_std": 0.712770507227782,
+  "confident_error_auroc_mi": 0.6853776409203661,
+  "confident_error_recall": 0.7222222222222222,
+  "false_flag_rate": 0.4984603541185527,
+  "aurc": 0.004031299006890544,
+  "coverage_at_lowest_risk": [
+    0.00038226299694189603,
+    0.0
+  ],
+  "ece": 0.034158270688450426,
+  "per_pathology": {
+    "Atelectasis": {
+      "n": 2012,
+      "positives": 186,
+      "task_auroc": 0.7251322003556749,
+      "confident_correct": 291,
+      "confident_wrong": 10,
+      "flagged": 299
+    },
+    "Cardiomegaly": {
+      "n": 2012,
+      "positives": 147,
+      "task_auroc": 0.8122813736754756,
+      "confident_correct": 420,
+      "confident_wrong": 1,
+      "flagged": 364
+    },
+    "Effusion": {
+      "n": 2012,
+      "positives": 95,
+      "task_auroc": 0.8222112401504544,
+      "confident_correct": 401,
+      "confident_wrong": 3,
+      "flagged": 397
+    },
+    "Infiltration": {
+      "n": 2012,
+      "positives": 62,
+      "task_auroc": 0.6910173697270472,
+      "confident_correct": 31,
+      "confident_wrong": 0,
+      "flagged": 31
+    },
+    "Mass": {
+      "n": 2012,
+      "positives": 5,
+      "task_auroc": 0.8262082710513203,
+      "confident_correct": 36,
+      "confident_wrong": 0,
+      "flagged": 21
+    },
+    "Nodule": {
+      "n": 2012,
+      "positives": 31,
+      "task_auroc": 0.5878262851932065,
+      "confident_correct": 100,
+      "confident_wrong": 0,
+      "flagged": 73
+    },
+    "Pneumonia": {
+      "n": 2012,
+      "positives": 40,
+      "task_auroc": 0.6112702839756592,
+      "confident_correct": 6,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Pneumothorax": {
+      "n": 2012,
+      "positives": 16,
+      "task_auroc": 0.5799724448897795,
+      "confident_correct": 147,
+      "confident_wrong": 1,
+      "flagged": 97
+    },
+    "Edema": {
+      "n": 2012,
+      "positives": 53,
+      "task_auroc": 0.7629036763077042,
+      "confident_correct": 339,
+      "confident_wrong": 2,
+      "flagged": 25
+    },
+    "Emphysema": {
+      "n": 2012,
+      "positives": 39,
+      "task_auroc": 0.6547493729450141,
+      "confident_correct": 34,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Fibrosis": {
+      "n": 2012,
+      "positives": 8,
+      "task_auroc": 0.6669161676646707,
+      "confident_correct": 383,
+      "confident_wrong": 1,
+      "flagged": 0
+    },
+    "Pleural_Thickening": {
+      "n": 2012,
+      "positives": 8,
+      "task_auroc": 0.6423403193612774,
+      "confident_correct": 169,
+      "confident_wrong": 0,
+      "flagged": 1
+    },
+    "Hernia": {
+      "n": 2012,
+      "positives": 16,
+      "task_auroc": 0.592434869739479,
+      "confident_correct": 241,
+      "confident_wrong": 0,
+      "flagged": 0
+    }
+  },
+  "error_type_counts": {
+    "confident_correct": 2598,
+    "tentative_correct": 11325,
+    "confident_fp": 1,
+    "tentative_fp": 11996,
+    "confident_fn": 17,
+    "tentative_fn": 219,
+    "unknown": 0
+  },
+  "risk_config": {
+    "decision_thresh": 0.5,
+    "conf_thresh": 0.6,
+    "unc_thresh": 0.15,
+    "mc_samples": 10,
+    "use_mc_dropout": false
+  }
+}

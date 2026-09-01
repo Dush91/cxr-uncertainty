@@ -1,0 +1,244 @@
+{
+  "title": "openiD (in-distribution, all valid classes)",
+  "n_images": 2012,
+  "pneumonia_prevalence": 0.019880715705765408,
+  "report": {
+    "schema_version": 2,
+    "n_images": 2012,
+    "n_records": 26156,
+    "n_confident": 2616,
+    "n_confident_wrong": 8,
+    "confident_error_auroc_std": 0.6313746165644172,
+    "confident_error_auroc_mi": 0.6190088190184049,
+    "confident_error_auroc_mahalanobis": 0.8353863113496932,
+    "confident_error_recall": 0.875,
+    "false_flag_rate": 0.4996165644171779,
+    "aurc": 0.002838473434726381,
+    "coverage_at_lowest_risk": [
+      0.00038226299694189603,
+      0.0
+    ],
+    "ece": 0.005367124719668799,
+    "per_pathology": {
+      "Atelectasis": {
+        "n": 2012,
+        "positives": 186,
+        "task_auroc": 0.7385642275848261,
+        "confident_correct": 36,
+        "confident_wrong": 1,
+        "flagged": 19
+      },
+      "Cardiomegaly": {
+        "n": 2012,
+        "positives": 147,
+        "task_auroc": 0.8628658970290529,
+        "confident_correct": 396,
+        "confident_wrong": 1,
+        "flagged": 196
+      },
+      "Effusion": {
+        "n": 2012,
+        "positives": 95,
+        "task_auroc": 0.8703346786371249,
+        "confident_correct": 146,
+        "confident_wrong": 2,
+        "flagged": 64
+      },
+      "Infiltration": {
+        "n": 2012,
+        "positives": 62,
+        "task_auroc": 0.7258974358974359,
+        "confident_correct": 0,
+        "confident_wrong": 0,
+        "flagged": 0
+      },
+      "Mass": {
+        "n": 2012,
+        "positives": 5,
+        "task_auroc": 0.8686596910812158,
+        "confident_correct": 1,
+        "confident_wrong": 0,
+        "flagged": 1
+      },
+      "Nodule": {
+        "n": 2012,
+        "positives": 31,
+        "task_auroc": 0.6428001498102945,
+        "confident_correct": 195,
+        "confident_wrong": 0,
+        "flagged": 101
+      },
+      "Pneumonia": {
+        "n": 2012,
+        "positives": 40,
+        "task_auroc": 0.6610167342799189,
+        "confident_correct": 77,
+        "confident_wrong": 0,
+        "flagged": 50
+      },
+      "Pneumothorax": {
+        "n": 2012,
+        "positives": 16,
+        "task_auroc": 0.7456788577154309,
+        "confident_correct": 417,
+        "confident_wrong": 0,
+        "flagged": 213
+      },
+      "Edema": {
+        "n": 2012,
+        "positives": 53,
+        "task_auroc": 0.8116482225240063,
+        "confident_correct": 409,
+        "confident_wrong": 2,
+        "flagged": 188
+      },
+      "Emphysema": {
+        "n": 2012,
+        "positives": 39,
+        "task_auroc": 0.6593109542932148,
+        "confident_correct": 2,
+        "confident_wrong": 0,
+        "flagged": 0
+      },
+      "Fibrosis": {
+        "n": 2012,
+        "positives": 8,
+        "task_auroc": 0.6160179640718563,
+        "confident_correct": 442,
+        "confident_wrong": 1,
+        "flagged": 212
+      },
+      "Pleural_Thickening": {
+        "n": 2012,
+        "positives": 8,
+        "task_auroc": 0.6993512974051896,
+        "confident_correct": 115,
+        "confident_wrong": 1,
+        "flagged": 70
+      },
+      "Hernia": {
+        "n": 2012,
+        "positives": 16,
+        "task_auroc": 0.6172031563126252,
+        "confident_correct": 372,
+        "confident_wrong": 0,
+        "flagged": 196
+      }
+    },
+    "error_type_counts": {
+      "confident_correct": 2608,
+      "tentative_correct": 13358,
+      "confident_fp": 1,
+      "tentative_fp": 10020,
+      "confident_fn": 7,
+      "tentative_fn": 162,
+      "unknown": 0
+    },
+    "risk_config": {
+      "decision_thresh": 0.5,
+      "conf_thresh": 0.6,
+      "unc_thresh": 0.15,
+      "mc_samples": 10,
+      "use_mc_dropout": true
+    },
+    "conformal_active": false,
+    "conformal_coverage": null,
+    "conformal_size": null,
+    "per_pathology_conformal": null,
+    "brier": null
+  },
+  "selectivity": [
+    {
+      "conf_top_pct": 50,
+      "n_confident": 13078,
+      "n_confident_wrong": 132,
+      "auroc_epistemic_std": 0.6946,
+      "auroc_mutual_info": 0.6202,
+      "auroc_mahalanobis": 0.7098
+    },
+    {
+      "conf_top_pct": 25,
+      "n_confident": 6539,
+      "n_confident_wrong": 35,
+      "auroc_epistemic_std": 0.6938,
+      "auroc_mutual_info": 0.6269,
+      "auroc_mahalanobis": 0.7389
+    },
+    {
+      "conf_top_pct": 15,
+      "n_confident": 3924,
+      "n_confident_wrong": 17,
+      "auroc_epistemic_std": 0.6995,
+      "auroc_mutual_info": 0.6232,
+      "auroc_mahalanobis": 0.7919
+    },
+    {
+      "conf_top_pct": 10,
+      "n_confident": 2616,
+      "n_confident_wrong": 8,
+      "auroc_epistemic_std": 0.6314,
+      "auroc_mutual_info": 0.619,
+      "auroc_mahalanobis": 0.8354
+    },
+    {
+      "conf_top_pct": 5,
+      "n_confident": 1308,
+      "n_confident_wrong": 2,
+      "auroc_epistemic_std": 0.41,
+      "auroc_mutual_info": 0.4077,
+      "auroc_mahalanobis": 0.8913
+    }
+  ],
+  "meta": {
+    "calibrator": "ts",
+    "use_beta": false,
+    "use_ts": true,
+    "alignment_set": "none",
+    "n_members": 3,
+    "n_pathologies": 14,
+    "member_keys": [
+      "xrv_nih",
+      "convnextv2",
+      "raddino"
+    ],
+    "beta_slots_fit": 0,
+    "beta_slots_identity": 42,
+    "temperature_T": 0.6301,
+    "uq_score": "mahalanobis",
+    "maha_fit": {
+      "label_idx": 6,
+      "label": "Pneumonia",
+      "n_per_class": {
+        "0": 1964,
+        "1": 38
+      },
+      "n_classes": 2
+    },
+    "thresholds": {
+      "Atelectasis": 0.0382,
+      "Cardiomegaly": 0.0304,
+      "Edema": 0.0159,
+      "Effusion": 0.048,
+      "Emphysema": 0.0011,
+      "Fibrosis": 0.0103,
+      "Hernia": 0.0009,
+      "Infiltration": 0.0834,
+      "Mass": 0.0069,
+      "Nodule": 0.0451,
+      "Pleural_Thickening": 0.0094,
+      "Pneumonia": 0.0073,
+      "Pneumothorax": 0.0329
+    },
+    "conf_cut": 0.8855,
+    "unc_cut": 982.9505,
+    "conf_pct": 10.0,
+    "unc_pct": 50.0,
+    "unc_column": "mahalanobis",
+    "risk_flag_override": false,
+    "conformal_active": false,
+    "maha_reproducibility": {
+      "max_abs_diff_vs_saved": 0.0,
+      "mean_abs_diff_vs_saved": 0.0
+    }
+  }
+}

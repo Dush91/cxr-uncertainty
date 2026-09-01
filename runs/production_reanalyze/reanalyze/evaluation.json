@@ -1,0 +1,223 @@
+{
+  "schema_version": 3,
+  "n_images": 503,
+  "n_records": 6539,
+  "n_confident": 654,
+  "n_confident_wrong": 1,
+  "confident_error_auroc_std": 0.9188361408882083,
+  "confident_error_auroc_mi": 0.7059724349157733,
+  "confident_error_auroc_mahalanobis": 0.31393568147013784,
+  "confident_error_recall": 1.0,
+  "false_flag_rate": 0.4992343032159265,
+  "aurc": 0.00013049602378570327,
+  "coverage_at_lowest_risk": [
+    0.0015290519877675841,
+    0.0
+  ],
+  "ece": 0.005152745068053218,
+  "per_pathology": {
+    "Atelectasis": {
+      "n": 503,
+      "positives": 51,
+      "task_auroc": 0.7087671351726531,
+      "confident_correct": 3,
+      "confident_wrong": 0,
+      "flagged": 3
+    },
+    "Cardiomegaly": {
+      "n": 503,
+      "positives": 41,
+      "task_auroc": 0.8901911097033048,
+      "confident_correct": 7,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Effusion": {
+      "n": 503,
+      "positives": 18,
+      "task_auroc": 0.7901489117983963,
+      "confident_correct": 44,
+      "confident_wrong": 0,
+      "flagged": 40
+    },
+    "Infiltration": {
+      "n": 503,
+      "positives": 16,
+      "task_auroc": 0.6448280287474333,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Mass": {
+      "n": 503,
+      "positives": 3,
+      "task_auroc": 0.8386666666666667,
+      "confident_correct": 374,
+      "confident_wrong": 1,
+      "flagged": 277
+    },
+    "Nodule": {
+      "n": 503,
+      "positives": 9,
+      "task_auroc": 0.7650697255960414,
+      "confident_correct": 0,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Pneumonia": {
+      "n": 503,
+      "positives": 9,
+      "task_auroc": 0.7340305892937472,
+      "confident_correct": 2,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Pneumothorax": {
+      "n": 503,
+      "positives": 4,
+      "task_auroc": 0.9561623246492986,
+      "confident_correct": 1,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Edema": {
+      "n": 503,
+      "positives": 16,
+      "task_auroc": 0.8126925051334702,
+      "confident_correct": 56,
+      "confident_wrong": 0,
+      "flagged": 1
+    },
+    "Emphysema": {
+      "n": 503,
+      "positives": 10,
+      "task_auroc": 0.6490872210953347,
+      "confident_correct": 23,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Fibrosis": {
+      "n": 503,
+      "positives": 4,
+      "task_auroc": 0.7993486973947895,
+      "confident_correct": 10,
+      "confident_wrong": 0,
+      "flagged": 0
+    },
+    "Pleural_Thickening": {
+      "n": 503,
+      "positives": 2,
+      "task_auroc": 0.970558882235529,
+      "confident_correct": 85,
+      "confident_wrong": 0,
+      "flagged": 6
+    },
+    "Hernia": {
+      "n": 503,
+      "positives": 4,
+      "task_auroc": 0.5821643286573146,
+      "confident_correct": 48,
+      "confident_wrong": 0,
+      "flagged": 0
+    }
+  },
+  "error_type_counts": {
+    "confident_correct": 653,
+    "tentative_correct": 3763,
+    "confident_fp": 0,
+    "tentative_fp": 2067,
+    "confident_fn": 1,
+    "tentative_fn": 55,
+    "unknown": 0
+  },
+  "risk_config": {
+    "decision_thresh": 0.5,
+    "conf_thresh": 0.6,
+    "unc_thresh": 0.15,
+    "mc_samples": 10,
+    "use_mc_dropout": true
+  },
+  "conformal_active": false,
+  "conformal_coverage": null,
+  "conformal_size": null,
+  "per_pathology_conformal": null,
+  "brier": 0.0260177245633889,
+  "brier_decomposition": {
+    "brier": 0.0260177245633889,
+    "reliability": 0.00030839283483123035,
+    "resolution": 0.001705164785485127,
+    "uncertainty": 0.027779819606014902
+  },
+  "nll": 0.11271632856481137,
+  "ece_multi": {
+    "5": 0.0013,
+    "10": 0.0052,
+    "15": 0.007,
+    "20": 0.0096
+  },
+  "reliability": {
+    "bin_center": [
+      0.05,
+      0.15000000000000002,
+      0.25,
+      0.35000000000000003,
+      0.45,
+      0.55,
+      0.75,
+      0.8500000000000001
+    ],
+    "accuracy": [
+      0.021997718755092065,
+      0.08695652173913043,
+      0.325,
+      0.2222222222222222,
+      0.75,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "confidence": [
+      0.02010145021997719,
+      0.13065565217391303,
+      0.2411625,
+      0.33652222222222217,
+      0.44079999999999997,
+      0.51145,
+      0.7666,
+      0.8493
+    ],
+    "count": [
+      6137,
+      345,
+      40,
+      9,
+      4,
+      2,
+      1,
+      1
+    ]
+  },
+  "confidence_auroc": 0.8606431852986217,
+  "aurc_by_score": {
+    "epistemic_std": {
+      "aurc": 0.0001,
+      "e_aurc": 0.0001,
+      "error_rate": 0.0015
+    },
+    "mutual_info": {
+      "aurc": 0.0005,
+      "e_aurc": 0.0005,
+      "error_rate": 0.0015
+    },
+    "confidence": {
+      "aurc": 0.0002,
+      "e_aurc": 0.0002,
+      "error_rate": 0.0015
+    },
+    "mahalanobis": {
+      "aurc": 0.0018,
+      "e_aurc": 0.0018,
+      "error_rate": 0.0015
+    }
+  }
+}
