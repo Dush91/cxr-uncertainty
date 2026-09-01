@@ -63,6 +63,8 @@ Project 7.pdf
 
 # Registry entry form -- carries personal data (student ID, email, signature)
 Dissertation Entry Form*.doc
+# Word lock files
+~$*
 
 # Run logs: large, and they carry rented-host filesystem paths
 runs/**/*.log
